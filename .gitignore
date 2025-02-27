@@ -1,0 +1,30 @@
+# Node.js dependencies
+node_modules/
+
+# Generated data files
+recipes-data.json
+categories-data.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db

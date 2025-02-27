@@ -1,0 +1,13 @@
+# Chambordesseco
+
+## Ingredients:
+- **2 oz** Bourbon
+- **3/4 oz** Chambord
+- **1/2 oz** Vanilla syrup
+
+## Instructions:
+1. Shake with ice
+2. Pour in a coupe
+3. Top with prosecco
+
+(Try with 2 dashes of Peychaud)

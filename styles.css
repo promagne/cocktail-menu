@@ -1,0 +1,295 @@
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --card-bg: #fff;
+    --header-bg: #f5f5f5;
+    --border-color: #ddd;
+    --text-secondary: #666;
+    --accent-color: #2196F3;
+    --success-color: #4CAF50;
+    --font-family: Consolas, "Courier New", monospace;
+    --indicator-bg: rgba(127, 127, 127, 0.1);
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.4;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #eee;
+    --text-secondary: #aaa;
+    --border-color: #444;
+    --card-bg: #2d2d2d;
+    --header-bg: #1f1f1f;
+    --indicator-bg: rgba(255, 255, 255, 0.1);
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header-controls h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Tab Navigation */
+.tab-container {
+    margin-bottom: 24px;
+}
+
+.tab-nav {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.tab-btn {
+    background: transparent;
+    color: var(--text-color);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-btn:hover {
+    background-color: var(--indicator-bg);
+}
+
+.tab-btn.active {
+    border-bottom: 2px solid var(--accent-color);
+    font-weight: bold;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Search */
+.search-container {
+    margin-bottom: 24px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-size: 13px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+/* Cocktail Grid */
+.cocktails-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.cocktail-card {
+    background: var(--card-bg);
+    border-radius: 4px;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cocktail-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cocktail-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.cocktail-card p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.ingredient {
+    font-size: 11px;
+    background-color: var(--indicator-bg);
+    color: var(--text-secondary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.ingredient.more {
+    background-color: transparent;
+    color: var(--accent-color);
+    font-style: italic;
+    font-size: 10px;
+}
+
+/* Alcohol Categories */
+.alcohol-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.category-btn {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+.category-btn:hover {
+    background-color: var(--indicator-bg);
+}
+
+.category-btn.active {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.category-cocktails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    margin: 10% auto;
+    padding: 24px;
+    border-radius: 4px;
+    max-width: 600px;
+    position: relative;
+    box-shadow: var(--card-shadow);
+}
+
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.close-modal:hover {
+    color: var(--text-color);
+}
+
+/* Cocktail Detail */
+#cocktailDetail h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+#cocktailDetail h2 {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+#cocktailDetail ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+#cocktailDetail ol {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+#cocktailDetail li {
+    margin-bottom: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cocktails-grid, .category-cocktails {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .container {
+        padding: 16px;
+    }
+    
+    .modal-content {
+        margin: 5% auto;
+        width: 90%;
+    }
+}

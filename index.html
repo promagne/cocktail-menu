@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container" id="mainContainer">
+        <div class="header-controls">
+            <button class="theme-toggle" id="themeToggle">Toggle Dark Mode</button>
+            <h1>Cocktail Menu</h1>
+        </div>
+
+        <div class="tab-container">
+            <div class="tab-nav">
+                <button class="tab-btn active" data-tab="all">All Cocktails</button>
+                <button class="tab-btn" data-tab="by-alcohol">By Alcohol Type</button>
+            </div>
+        </div>
+
+        <div class="tab-content">
+            <!-- All Cocktails Tab -->
+            <div class="tab-pane active" id="all">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search cocktails...">
+                </div>
+                <div class="cocktails-grid" id="cocktailsGrid"></div>
+            </div>
+            
+            <!-- By Alcohol Type Tab -->
+            <div class="tab-pane" id="by-alcohol">
+                <div class="alcohol-categories" id="alcoholCategories"></div>
+                <div class="category-cocktails" id="categoryCocktails"></div>
+            </div>
+        </div>
+
+        <!-- Cocktail Detail Modal -->
+        <div id="cocktailModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="cocktailDetail"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
