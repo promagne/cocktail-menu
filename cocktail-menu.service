@@ -1,0 +1,14 @@
+[Unit]
+Description=Cocktail Menu Web Application
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/path/to/cocktail-menu
+ExecStart=/usr/bin/node server.js
+Restart=on-failure
+Environment=PORT=3000
+
+[Install]
+WantedBy=multi-user.target
