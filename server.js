@@ -297,6 +297,26 @@ function generateCategoryData() {
 // Serve static files
 app.use(express.static(__dirname));
 
+// API endpoint to get cocktails data
+app.get('/api/cocktails', (req, res) => {
+    try {
+        const dataPath = path.join(__dirname, 'recipes-data.json');
+        if (fs.existsSync(dataPath)) {
+            const cocktailsData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+            res.json(cocktailsData);
+        } else {
+            const cocktails = generateCocktailData();
+            res.json(cocktails);
+        }
+    } catch (error) {
+        console.error('Error fetching cocktails data:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
 // Generate data files on server start
 app.get('/generate-data', (req, res) => {
     try {

@@ -3,6 +3,7 @@ title: Larceny and Old Lace
 flavor: []
 favorite: false
 available: true
+alcohol: [Larceny Bourbon, Carpano Antica Vermouth]
 ---
 # Larceny and Old Lace
 
@@ -18,6 +19,7 @@ available: true
 3. Garnish with lemon peel and brandied cherry.
 
 Peacock Alley
+
 
 
 

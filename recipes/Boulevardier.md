@@ -3,6 +3,7 @@ title: Boulevardier
 flavor: []
 favorite: false
 available: true
+alcohol: [Marker's Mark Bourbon, House Vermouth]
 ---
 # Boulevardier
 
@@ -17,6 +18,7 @@ available: true
 ## Instructions:
 1. Stir all the ingredients over ice, then strain into a coupe. 
 2. Garnish with the lemon twist.
+
 
 
 

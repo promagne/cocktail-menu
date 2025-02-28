@@ -3,6 +3,7 @@ title: Strawberry Bourbon
 flavor: []
 favorite: false
 available: true
+alcohol: [Strawberries]
 ---
 # Strawberry Bourbon Cocktail
 
@@ -22,6 +23,7 @@ Gently muddle the strawberries with the Simple Syrup in a cocktail shaker. Add t
 Makes 1 drink
 
 When refrigerated, the syrup keeps for 1 to 2 weeks.
+
 
 
 

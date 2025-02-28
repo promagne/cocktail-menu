@@ -1,8 +1,9 @@
 ---
 title: Sazerac
 flavor: []
-favorite: true
+favorite: false
 available: true
+alcohol: [Rye]
 ---
 # Sazerac
 
@@ -13,6 +14,7 @@ available: true
 - Rinse Glass With Absinthe
 
 ## Instructions:
+
 
 
 

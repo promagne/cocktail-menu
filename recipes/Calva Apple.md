@@ -3,6 +3,7 @@ title: Calva Apple
 flavor: []
 favorite: false
 available: true
+alcohol: []
 ---
 # Calva Apple
   
@@ -15,5 +16,6 @@ available: true
 - Torch in a flamming glass
 - Add little pieces of green apple
 - Serve and enjoy!
+
 
 

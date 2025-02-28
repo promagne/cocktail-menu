@@ -3,6 +3,7 @@ title: Rhumination
 flavor: []
 favorite: false
 available: true
+alcohol: [Bourbon, Rhum]
 ---
 # Rhumination
 
@@ -15,6 +16,7 @@ available: true
 
 ## Instructions:
 1. Shake
+
 
 
 

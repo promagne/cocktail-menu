@@ -3,6 +3,7 @@ title: Peach Bellini
 flavor: []
 favorite: false
 available: true
+alcohol: [Cointreau, Jus De Peche]
 ---
 # Peach Bellini
 
@@ -13,6 +14,7 @@ available: true
 
 ## Instructions:
 1. Top with prosecco
+
 
 
 

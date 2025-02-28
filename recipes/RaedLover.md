@@ -3,6 +3,7 @@ title: RaedLover
 flavor: []
 favorite: false
 available: true
+alcohol: []
 ---
 # RaedLover
 
@@ -35,6 +36,7 @@ available: true
 3. Shake well
 
 4. Strain into a cocktail glass
+
 
 
 

@@ -3,6 +3,7 @@ title: Conference
 flavor: []
 favorite: false
 available: true
+alcohol: [Rittenhouse 100 Rye, Buffalo Trace Bourbon]
 ---
 # Conference
 ## Brian Miller, 2008
@@ -23,6 +24,7 @@ One of our servers asked me to make her something stirred and boozy. So I threw 
 
 ## Instructions:
 Stir all the ingredients over ice, then strain into a double rocks glass over 1 large ice cube. Garnish with the lemon and orange twists.
+
 
 
 

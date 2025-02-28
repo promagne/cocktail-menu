@@ -3,6 +3,7 @@ title: Bourbon Amaro
 flavor: []
 favorite: false
 available: true
+alcohol: [Bourbon, Amaro]
 ---
 # BourBamaro
 
@@ -23,6 +24,7 @@ available: true
 5. Serve immediately and enjoy!
 
 This cocktail is a perfect blend of bitter and sweet, with the richness of bourbon complementing the herbal qualities of amaro and Campari. Enjoy responsibly!
+
 
 
 

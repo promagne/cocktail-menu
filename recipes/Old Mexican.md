@@ -3,6 +3,7 @@ title: Old Mexican
 flavor: []
 favorite: false
 available: true
+alcohol: [Blanco Tequila, Mint Leaves]
 ---
 # Old Mexican
 
@@ -19,6 +20,7 @@ available: true
 
 Glass: Old Fashioned
 Garnish: small dried rose bud
+
 
 
 

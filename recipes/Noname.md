@@ -1,8 +1,9 @@
 ---
 title: Noname
 flavor: []
-favorite: true
+favorite: false
 available: true
+alcohol: [Bourbon, Apple Brandy]
 ---
 # Noname
 
@@ -15,6 +16,7 @@ available: true
 - Cerise Marashiano
 
 ## Instructions:
+
 
 
 

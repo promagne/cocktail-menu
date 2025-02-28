@@ -3,6 +3,7 @@ title: Millionaire Cocktail
 flavor: []
 favorite: false
 available: true
+alcohol: [Jamaican Rum, Apricot Liqueur]
 ---
 # Millionaire Cocktail
 
@@ -27,6 +28,7 @@ Several cocktails bearing the Millionaire moniker have been in circulation since
 
 ## Instructions:
 Shake all of the ingredients with ice, then strain into a chilled glass and garnish.
+
 
 
 

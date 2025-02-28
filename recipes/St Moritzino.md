@@ -3,6 +3,7 @@ title: St Moritzino
 flavor: []
 favorite: false
 available: true
+alcohol: [Vodka, Cointreau/triple sec]
 ---
 # St Moritzino
 
@@ -13,6 +14,7 @@ available: true
 - **1 oz** Lemon Juice
 
 ## Instructions:
+
 
 
 

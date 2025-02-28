@@ -3,6 +3,7 @@ title: CosmopoBiks
 flavor: []
 favorite: false
 available: true
+alcohol: [Grey Goose, Grenadine]
 ---
 # CosmopoliBiks
 
@@ -17,6 +18,7 @@ available: true
 ## Instructions:
 1. Shake with ice
 2. In a coupe glass
+
 
 
 

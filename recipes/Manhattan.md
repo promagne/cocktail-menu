@@ -3,6 +3,7 @@ title: Manhattan
 flavor: []
 favorite: false
 available: true
+alcohol: [Bourbon or rye, Vermouth]
 ---
 # Manhattan
 
@@ -17,6 +18,7 @@ available: true
 1. Add all the ingredients into a mixing glass with ice, and stir until well-chilled.
 2. Strain into a chilled coupe.
 3. Garnish with a brandied cherry.
+
 
 
 

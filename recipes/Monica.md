@@ -1,8 +1,9 @@
 ---
 title: Monica
 flavor: []
-favorite: true
+favorite: false
 available: true
+alcohol: [Gin, St-Germain]
 ---
 # Monica Drink
 
@@ -16,6 +17,7 @@ available: true
 1. Shake with ice.
 2. Pour in a frozen coupe.
 3. Top it off with Prosecco.
+
 
 
 

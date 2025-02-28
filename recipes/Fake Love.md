@@ -3,6 +3,7 @@ title: Fake Love
 flavor: []
 favorite: false
 available: true
+alcohol: [Cognac]
 ---
 # Fake Love
 
@@ -18,6 +19,7 @@ This is a great twist on the traditional French 75 (which frankly always works b
 
 ## Instructions:
 Pour all ingredients except sparkling wine into a shaker, fill with ice, and shake well. Strain into a coupe or champagne flute. Top with sparkling wine (2-3 ounces). Garnish with...ennui.
+
 
 
 

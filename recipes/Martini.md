@@ -3,6 +3,7 @@ title: Martini
 flavor: []
 favorite: false
 available: true
+alcohol: [Gin, Dry Vermouth]
 ---
 # Perfect Solution Martini
 
@@ -14,6 +15,7 @@ available: true
 ## Instructions:
 1. Stir assez longtemps genre 30 secondes avec verre plein de glaçons
 2. T'auras la solution parfaite
+
 
 
 

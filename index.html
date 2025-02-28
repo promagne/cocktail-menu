@@ -14,53 +14,37 @@
             <h1>Cocktail Menu</h1>
         </div>
 
-        <div class="tab-container">
-            <div class="tab-nav">
-                <button class="tab-btn active" data-tab="all">All Cocktails</button>
-                <button class="tab-btn" data-tab="by-alcohol">By Alcohol Type</button>
-            </div>
-        </div>
-
-        <div class="tab-content">
-            <!-- All Cocktails Tab -->
-            <div class="tab-pane active" id="all">
-                <div class="search-container">
-                    <div class="search-input-wrapper">
-                        <input type="text" id="searchInput" placeholder="Search for cocktails by name...">
+        <div class="main-content">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <input type="text" id="searchInput" placeholder="Search for cocktails by name...">
+                </div>
+                
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label>Availability:</label>
+                        <select id="availabilityFilter">
+                            <option value="all">All</option>
+                            <option value="available">Available</option>
+                            <option value="unavailable">Unavailable</option>
+                        </select>
                     </div>
                     
-                    <div class="filter-container">
-                        <div class="filter-group">
-                            <label>Availability:</label>
-                            <select id="availabilityFilter">
-                                <option value="all">All</option>
-                                <option value="available">Available</option>
-                                <option value="unavailable">Unavailable</option>
-                            </select>
-                        </div>
-                        
-                        <div class="filter-group">
-                            <label>Favorites:</label>
-                            <select id="favoriteFilter">
-                                <option value="all">All</option>
-                                <option value="favorite">Favorites Only</option>
-                            </select>
-                        </div>
-                        
-                        <div class="filter-group flavor-filter">
-                            <label>Flavor Tags:</label>
-                            <div id="flavorTags" class="flavor-tags-container"></div>
-                        </div>
+                    <div class="filter-group">
+                        <label>Favorites:</label>
+                        <select id="favoriteFilter">
+                            <option value="all">All</option>
+                            <option value="favorite">Favorites Only</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group flavor-filter">
+                        <label>Flavor Tags:</label>
+                        <div id="flavorTags" class="flavor-tags-container"></div>
                     </div>
                 </div>
-                <div class="cocktails-grid" id="cocktailsGrid"></div>
             </div>
-            
-            <!-- By Alcohol Type Tab -->
-            <div class="tab-pane" id="by-alcohol">
-                <div class="alcohol-categories" id="alcoholCategories"></div>
-                <div class="category-cocktails" id="categoryCocktails"></div>
-            </div>
+            <div class="cocktails-grid" id="cocktailsGrid"></div>
         </div>
 
         <!-- Cocktail Detail Modal -->

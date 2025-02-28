@@ -3,6 +3,7 @@ title: Litchee Martini
 flavor: []
 favorite: false
 available: true
+alcohol: [Gin, Dry Vermouth]
 ---
 # Litchee Martini
 
@@ -14,6 +15,7 @@ available: true
 ## Instructions:
 1. Stir lot of ice
 2. Add litchee to garnish
+
 
 
 

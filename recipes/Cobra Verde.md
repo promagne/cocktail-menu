@@ -3,6 +3,7 @@ title: Cobra Verde
 flavor: []
 favorite: false
 available: true
+alcohol: [Neisson Rhum Agricole Blanc, Chamomile-infused Old Overholt Rye]
 ---
 # Cobra Verde
 
@@ -17,6 +18,7 @@ available: true
 2. No garnish.
 
 This is an adaptation of the classic Diamondback cocktail. The combination of so many intense ingredients gives it, well, extra bite. —Thomas Waugh, 2009
+
 
 
 

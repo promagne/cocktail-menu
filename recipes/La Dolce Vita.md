@@ -1,8 +1,9 @@
 ---
 title: La Dolce Vita
 flavor: []
-favorite: true
-available: false
+favorite: false
+available: true
+alcohol: [Chamomile-infused Old Overholt Rye, Campari]
 ---
 # La Dolce Vita
 
@@ -13,6 +14,7 @@ available: false
 
 ## Instructions:
 Stir all the ingredients over ice, then strain into a double rocks glass over 1 large ice cube. No garnish.
+
 
 
 

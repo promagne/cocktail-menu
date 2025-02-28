@@ -3,6 +3,7 @@ title: French 75
 flavor: []
 favorite: false
 available: true
+alcohol: [Gin, St Germain]
 ---
 # French 75
 
@@ -15,6 +16,7 @@ available: true
 
 ## Instructions:
 1. Shake with ice
+
 
 
 

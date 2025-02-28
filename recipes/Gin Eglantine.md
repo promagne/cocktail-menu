@@ -3,6 +3,7 @@ title: Gin Eglantine
 flavor: []
 favorite: false
 available: true
+alcohol: [Gin Botanist, St Germain]
 ---
 # Gin Eglantine
 
@@ -14,6 +15,7 @@ available: true
 - Dash Grapefruit
 
 ## Instructions:
+
 
 
 

@@ -3,6 +3,7 @@ title: Limoncello Bourbon
 flavor: []
 favorite: false
 available: true
+alcohol: [Bourbon, Amaro]
 ---
 # Limoncello Bourbon
 
@@ -15,6 +16,7 @@ available: true
 - Rosemary
 
 ## Instructions:
+
 
 
 

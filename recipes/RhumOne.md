@@ -3,6 +3,7 @@ title: RhumOne
 flavor: []
 favorite: false
 available: true
+alcohol: [Rum El Dorado, Over Proof Rum]
 ---
 # Tropical Rum Cocktail
 
@@ -18,6 +19,7 @@ available: true
 ## Instructions:
 1. Shake 3 ice cube
 2. In a glass with crushed ice
+
 
 
 

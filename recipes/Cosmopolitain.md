@@ -3,6 +3,7 @@ title: Cosmopolitain
 flavor: []
 favorite: false
 available: true
+alcohol: [Vodka Grey Goose, Cointreau]
 ---
 # Cosmopolitain
 
@@ -16,6 +17,7 @@ available: true
 ## Instructions:
 1. Pour un verre haut.
 2. Shake it in ice
+
 
 
 

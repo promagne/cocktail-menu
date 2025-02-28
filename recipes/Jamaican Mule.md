@@ -3,6 +3,7 @@ title: Jamaican Mule
 flavor: []
 favorite: false
 available: true
+alcohol: [Rum]
 ---
 # Jamaican Mule
 
@@ -20,6 +21,7 @@ available: true
 4. Garnish with candied ginger on a pick, a lime wheel, and an edible orchid.
 
 Garnish: candied ginger slice on a pick, lime wheel, edible orchid
+
 
 
 

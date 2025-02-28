@@ -1,8 +1,9 @@
 ---
 title: Mai thai (Variation)
 flavor: []
-favorite: true
+favorite: false
 available: true
+alcohol: [Amber Rum, Coconut Rum]
 ---
 # Mai Tai 
 
@@ -20,3 +21,7 @@ available: true
 3. Shake well until chilled.  
 4. Strain into a glass filled with ice.  
 5.
+
+
+
+

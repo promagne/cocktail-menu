@@ -3,6 +3,7 @@ title: Chicago Classic
 flavor: []
 favorite: false
 available: true
+alcohol: [Frapin VSOP Cognac, Cointreau]
 ---
 # Chicago Classic
 
@@ -14,6 +15,7 @@ available: true
 
 ## Source:
 THE WALDORF ASTORIA BAR BOOK
+
 
 
 

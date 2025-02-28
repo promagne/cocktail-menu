@@ -3,6 +3,7 @@ title: Pillar
 flavor: []
 favorite: false
 available: true
+alcohol: [Gin, Vermouth]
 ---
 # Pillar
 
@@ -19,6 +20,7 @@ available: true
 3. Stir well until chilled.  
 4. Strain into a frozen coupe glass.  
 5. Serve and enjoy!  
+
 
 
 

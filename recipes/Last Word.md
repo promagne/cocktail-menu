@@ -3,6 +3,7 @@ title: Last Word
 flavor: []
 favorite: false
 available: true
+alcohol: [Beefeater London Dry Gin, Green Chartreuse]
 ---
 # Last Word
 
@@ -15,6 +16,7 @@ available: true
 ## Instructions:
 1. Shake all the ingredients with ice, then strain into a coupe.
 2. No garnish.
+
 
 
 

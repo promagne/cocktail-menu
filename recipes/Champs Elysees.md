@@ -3,6 +3,7 @@ title: Champs Elysees
 flavor: []
 favorite: false
 available: true
+alcohol: [Cognac, Green Chartreuse]
 ---
 # Champs-Élysees
 
@@ -15,6 +16,7 @@ available: true
 
 ## Instructions:
 Shake all the ingredients with ice, then strain into a coupe. Garnish with the lemon twist.
+
 
 
 

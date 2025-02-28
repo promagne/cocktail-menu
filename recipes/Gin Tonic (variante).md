@@ -3,6 +3,7 @@ title: Gin Tonic (variante)
 flavor: []
 favorite: false
 available: true
+alcohol: [Gin, Tonic Cinnamon]
 ---
 ## Ingredients:
 - **1.5 oz** Gin
@@ -11,6 +12,7 @@ available: true
 - **200 ml** Tonic Water
 
 ## Instructions:
+
 
 
 

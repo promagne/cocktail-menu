@@ -1,8 +1,9 @@
 ---
 title: Tailspin
-flavor: [strong, herbal]
+flavor: [powerfull, herbal]
 favorite: false
 available: true
+alcohol: [Gin, Chartreuse]
 ---
 # Tailspin
 
@@ -14,6 +15,7 @@ available: true
 
 ## Instructions:
 1. Rinse a coupe with campari
+
 
 
 

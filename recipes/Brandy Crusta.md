@@ -1,8 +1,9 @@
 ---
 title: Brandy Crusta
-flavor: [citrusy, sweet, strong]
-favorite: true
+flavor: []
+favorite: false
 available: true
+alcohol: [Kelt VSOP Cognac, Cointreau]
 ---
 # Brandy Crusta
 
@@ -23,3 +24,7 @@ Add all ingredients to mixing glass. Add ice and stir for 30 seconds. Strain int
 
 ## History:
 Originating in New Orleans in the 1850s from creative Italian barman Joseph Santini, and debuting in print courtesy of Jerry Thomas a short time later, the Brandy Crusta...
+
+
+
+

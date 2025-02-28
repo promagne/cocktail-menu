@@ -3,6 +3,7 @@ title: StJohn Frizzell
 flavor: []
 favorite: false
 available: true
+alcohol: [Cardamom Pods, London Dry Gin]
 ---
 # St. John Frizzell Fort Defiance Brooklyn
 
@@ -20,6 +21,7 @@ Pineapple Fronds
 
 ## Instructions:
 Combine the cardamom pods and simple syrup in a cocktail shaker and muddle fragment. Add the gin, pineapple fronds, juice, and lime juice. Add ice and shake until chilled, about 10 seconds. Fine strain ("fire-mesh strainer," page 51) into a tiki mug filled with ice. Top with tonic water and stir gently to combine. Garnish with pineapple fronds.
+
 
 
 

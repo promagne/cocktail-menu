@@ -3,6 +3,7 @@ title: Daisy Buchanan
 flavor: []
 favorite: false
 available: true
+alcohol: [Chamomile-Infused Old Rye, Dolin Dry Vermouth]
 ---
 # Daisy Buchanan
 
@@ -18,6 +19,7 @@ available: true
 3. Stir well until chilled.  
 4. Strain into a coupe glass.  
 5. Serve with no garnish.  
+
 
 
 

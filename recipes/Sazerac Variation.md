@@ -3,6 +3,7 @@ title: Sazerac Variation
 flavor: []
 favorite: false
 available: true
+alcohol: [Rye Whiskey, Cognac]
 ---
 # Sazerac Variation
 
@@ -26,6 +27,7 @@ available: true
 4. Strain into the prepared glass.
 
 5. Twist a slice of lemon peel over the surface to extract the oils and then discard.
+
 
 
 

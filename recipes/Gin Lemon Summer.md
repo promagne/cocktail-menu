@@ -3,6 +3,7 @@ title: Gin Lemon Summer
 flavor: []
 favorite: false
 available: true
+alcohol: [Gin, Cointreau]
 ---
 # New Summer Drink
 
@@ -17,6 +18,7 @@ available: true
 1. Shake super frosty
 
 Delicious. New summer drink
+
 
 
 

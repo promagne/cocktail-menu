@@ -3,6 +3,7 @@ title: Antibes
 flavor: []
 favorite: false
 available: true
+alcohol: [Gin, Benedictine]
 ---
 # Antibes
 
@@ -14,6 +15,7 @@ available: true
 
 ## Instructions:
 Fill a shaker with ice. Add gin, Benedictine, and grapefruit juice. Shake vigorously, then strain into a rocks glass with ice cubes (or one nice big ice cube). Garnish with wedge.
+
 
 
 

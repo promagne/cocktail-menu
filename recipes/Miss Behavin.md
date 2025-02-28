@@ -3,6 +3,7 @@ title: Miss Behavin
 flavor: []
 favorite: false
 available: true
+alcohol: [Laird'S STRAIGHT APPLE BRANDY BOTTLED IN BOND, Pear Eau De Vie]
 ---
 # MISS BEHAVIN'
 
@@ -18,6 +19,7 @@ available: true
 
 ## Additional Information:
 - Includes raspberry preserves and egg white
+
 
 
 
