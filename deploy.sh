@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Cocktail Menu Deployment Script
-# This script helps manage the cocktail-menu application
-
 # Function to display usage information
 show_usage() {
   echo "Usage: ./deploy.sh [command]"
