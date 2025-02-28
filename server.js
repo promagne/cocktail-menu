@@ -300,6 +300,11 @@ app.use(express.static(__dirname));
 
 // API endpoint to get cocktails data
 app.get('/api/cocktails', (req, res) => {
+    // Add CORS headers
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    
     try {
         const dataPath = path.join(__dirname, 'recipes-data.json');
         if (fs.existsSync(dataPath)) {

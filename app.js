@@ -245,23 +245,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize the application
     function init() {
-        // Fetch cocktails data
-        fetch('./api/cocktails')
+        console.log('Fetching cocktails data...');
+        
+        // Try the API endpoint first
+        fetch('/api/cocktails')
             .then(response => {
+                console.log('API response status:', response.status);
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
                 return response.json();
             })
             .then(data => {
+                console.log('Cocktails data received from API:', data.length, 'cocktails');
                 cocktails = data;
                 renderCocktails();
                 extractFlavorTags();
                 renderFlavorTags();
             })
             .catch(error => {
-                console.error('Error fetching cocktails:', error);
-                cocktailsGrid.innerHTML = '<div class="no-results">Error loading cocktails. Please try again later.</div>';
+                console.error('Error fetching cocktails from API:', error);
+                
+                // Fallback: try to load the data file directly
+                console.log('Trying fallback: loading recipes-data.json directly...');
+                fetch('/recipes-data.json')
+                    .then(response => {
+                        console.log('Fallback response status:', response.status);
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('Cocktails data received from fallback:', data.length, 'cocktails');
+                        cocktails = data;
+                        renderCocktails();
+                        extractFlavorTags();
+                        renderFlavorTags();
+                    })
+                    .catch(fallbackError => {
+                        console.error('Error fetching cocktails from fallback:', fallbackError);
+                        cocktailsGrid.innerHTML = '<div class="no-results">Error loading cocktails. Please try again later.</div>';
+                    });
             });
         
         // Add event listeners for filters
