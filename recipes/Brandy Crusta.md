@@ -1,4 +1,4 @@
-# BRANDY CRUSTA
+# Brandy Crusta
 
 ## Ingredients:
 - **2 oz** Kelt VSOP Cognac
