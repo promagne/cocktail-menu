@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Cocktail Menu Deployment Script
+# This script helps manage the cocktail-menu application
+
 # Function to display usage information
 show_usage() {
   echo "Usage: ./deploy.sh [command]"
@@ -12,6 +15,7 @@ show_usage() {
   echo "  status   - Check application status"
   echo "  logs     - View application logs"
   echo "  regenerate - Regenerate data files"
+  echo "  cleanup  - Clean up stale processes and ports"
 }
 
 # Check if PM2 is installed
@@ -31,6 +35,30 @@ check_running() {
   fi
 }
 
+# Clean up stale processes and ports
+cleanup() {
+  echo "Cleaning up stale processes and ports..."
+  
+  # Stop and delete any existing PM2 processes
+  if check_running; then
+    echo "Stopping existing PM2 process..."
+    pm2 stop cocktail-menu
+    pm2 delete cocktail-menu
+  fi
+  
+  # Check for any processes using port 3000
+  if lsof -i:3000 &>/dev/null; then
+    echo "Killing processes using port 3000..."
+    lsof -ti:3000 | xargs kill -9
+  fi
+  
+  # Delete data files
+  echo "Removing data files..."
+  rm -f recipes-data.json categories-data.json
+  
+  echo "Cleanup complete."
+}
+
 # Start the application
 start_app() {
   check_pm2
@@ -42,13 +70,12 @@ start_app() {
     exit 1
   fi
   
-  # Delete data files to force regeneration
-  echo "Cleaning up data files..."
-  rm -f recipes-data.json categories-data.json
+  # Clean up any stale processes
+  cleanup
   
   # Start the application with PM2
-  PORT=3000 pm2 start server.js --name "cocktail-menu"
-  echo "Application started. Access at http://$(hostname -I | awk '{print $1}'):3000"
+  pm2 start server.js --name "cocktail-menu"
+  echo "Application started. Access at http://$(hostname -I | awk '{print $1}'):3000 (or another port if 3000 is in use)"
 }
 
 # Stop the application
@@ -77,13 +104,13 @@ restart_app() {
   # Check if app exists in PM2
   if check_running; then
     echo "Application exists in PM2, restarting..."
-    PORT=3000 pm2 restart cocktail-menu
+    pm2 restart cocktail-menu
   else
     echo "Application not found in PM2, starting fresh..."
-    PORT=3000 pm2 start server.js --name "cocktail-menu"
+    pm2 start server.js --name "cocktail-menu"
   fi
   
-  echo "Application restarted. Access at http://$(hostname -I | awk '{print $1}'):3000"
+  echo "Application restarted. Access at http://$(hostname -I | awk '{print $1}'):3000 (or another port if 3000 is in use)"
 }
 
 # Force restart the application (stop and start)
@@ -91,22 +118,14 @@ force_restart() {
   check_pm2
   echo "Force restarting cocktail-menu application..."
   
-  # Stop the application if it's running
-  if check_running; then
-    echo "Stopping existing application..."
-    pm2 stop cocktail-menu
-    pm2 delete cocktail-menu
-  fi
-  
-  # Delete data files to force regeneration
-  echo "Cleaning up data files..."
-  rm -f recipes-data.json categories-data.json
+  # Clean up everything
+  cleanup
   
   # Start the application
   echo "Starting application with fresh data..."
-  PORT=3000 pm2 start server.js --name "cocktail-menu"
+  pm2 start server.js --name "cocktail-menu"
   
-  echo "Application force restarted. Access at http://$(hostname -I | awk '{print $1}'):3000"
+  echo "Application force restarted. Access at http://$(hostname -I | awk '{print $1}'):3000 (or another port if 3000 is in use)"
 }
 
 # Update the application
@@ -119,22 +138,8 @@ update_app() {
   # Install any new dependencies
   npm install
   
-  # Stop the application if it's running
-  if check_running; then
-    echo "Stopping existing application..."
-    pm2 stop cocktail-menu
-    pm2 delete cocktail-menu
-  fi
-  
-  # Delete data files to force regeneration
-  echo "Cleaning up data files..."
-  rm -f recipes-data.json categories-data.json
-  
-  # Start the application
-  echo "Starting application with fresh data..."
-  PORT=3000 pm2 start server.js --name "cocktail-menu"
-  
-  echo "Update complete. Access at http://$(hostname -I | awk '{print $1}'):3000"
+  # Force restart
+  force_restart
 }
 
 # Check application status
@@ -197,6 +202,9 @@ case "$1" in
     ;;
   regenerate)
     regenerate_data
+    ;;
+  cleanup)
+    cleanup
     ;;
   *)
     show_usage

@@ -4,10 +4,28 @@ const path = require('path');
 const marked = require('marked');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const DEFAULT_PORT = 3000;
 
-// Serve static files
-app.use(express.static(__dirname));
+// Function to find an available port
+function findAvailablePort(startPort) {
+    return new Promise((resolve, reject) => {
+        const server = require('net').createServer();
+        server.on('error', (err) => {
+            if (err.code === 'EADDRINUSE') {
+                // Port is in use, try the next one
+                resolve(findAvailablePort(startPort + 1));
+            } else {
+                reject(err);
+            }
+        });
+        
+        server.listen(startPort, () => {
+            server.close(() => {
+                resolve(startPort);
+            });
+        });
+    });
+}
 
 // Function to clean up existing data files
 function cleanupDataFiles() {
@@ -218,6 +236,9 @@ function generateCategoryData() {
     return categories;
 }
 
+// Serve static files
+app.use(express.static(__dirname));
+
 // Generate data files on server start
 app.get('/generate-data', (req, res) => {
     try {
@@ -244,11 +265,13 @@ app.get('/', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-    console.log('Generating data files...');
-    cleanupDataFiles();
-    generateCocktailData();
-    generateCategoryData();
-    console.log('Data files generated!');
+findAvailablePort(DEFAULT_PORT).then(PORT => {
+    app.listen(PORT, () => {
+        console.log(`Server running at http://localhost:${PORT}`);
+        console.log('Generating data files...');
+        cleanupDataFiles();
+        generateCocktailData();
+        generateCategoryData();
+        console.log('Data files generated!');
+    });
 });
