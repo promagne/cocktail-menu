@@ -10,6 +10,7 @@ show_usage() {
   echo "  start    - Start the application"
   echo "  stop     - Stop the application"
   echo "  restart  - Restart the application"
+  echo "  force-restart - Force restart the application (stop and start)"
   echo "  update   - Pull latest changes and restart"
   echo "  status   - Check application status"
   echo "  logs     - View application logs"
@@ -24,16 +25,29 @@ check_pm2() {
   fi
 }
 
+# Check if the application is running
+check_running() {
+  if pm2 list | grep -q "cocktail-menu"; then
+    return 0  # Application is running
+  else
+    return 1  # Application is not running
+  fi
+}
+
 # Start the application
 start_app() {
   check_pm2
   echo "Starting cocktail-menu application..."
   
   # Check if app is already running
-  if pm2 list | grep -q "cocktail-menu"; then
+  if check_running; then
     echo "Application is already running. Use 'restart' instead."
     exit 1
   fi
+  
+  # Delete data files to force regeneration
+  echo "Cleaning up data files..."
+  rm -f recipes-data.json categories-data.json
   
   # Start the application with PM2
   PORT=3000 pm2 start server.js --name "cocktail-menu"
@@ -44,8 +58,14 @@ start_app() {
 stop_app() {
   check_pm2
   echo "Stopping cocktail-menu application..."
-  pm2 stop cocktail-menu
-  echo "Application stopped."
+  
+  if check_running; then
+    pm2 stop cocktail-menu
+    pm2 delete cocktail-menu
+    echo "Application stopped and removed from PM2."
+  else
+    echo "Application is not running."
+  fi
 }
 
 # Restart the application
@@ -58,16 +78,38 @@ restart_app() {
   rm -f recipes-data.json categories-data.json
   
   # Check if app exists in PM2
-  if pm2 list | grep -q "cocktail-menu"; then
-    # Restart the application
+  if check_running; then
+    echo "Application exists in PM2, restarting..."
     PORT=3000 pm2 restart cocktail-menu
   else
-    # Start the application if it's not running
-    echo "Application is not running. Starting now..."
+    echo "Application not found in PM2, starting fresh..."
     PORT=3000 pm2 start server.js --name "cocktail-menu"
   fi
   
   echo "Application restarted. Access at http://$(hostname -I | awk '{print $1}'):3000"
+}
+
+# Force restart the application (stop and start)
+force_restart() {
+  check_pm2
+  echo "Force restarting cocktail-menu application..."
+  
+  # Stop the application if it's running
+  if check_running; then
+    echo "Stopping existing application..."
+    pm2 stop cocktail-menu
+    pm2 delete cocktail-menu
+  fi
+  
+  # Delete data files to force regeneration
+  echo "Cleaning up data files..."
+  rm -f recipes-data.json categories-data.json
+  
+  # Start the application
+  echo "Starting application with fresh data..."
+  PORT=3000 pm2 start server.js --name "cocktail-menu"
+  
+  echo "Application force restarted. Access at http://$(hostname -I | awk '{print $1}'):3000"
 }
 
 # Update the application
@@ -81,7 +123,7 @@ update_app() {
   npm install
   
   # Stop the application if it's running
-  if pm2 list | grep -q "cocktail-menu"; then
+  if check_running; then
     echo "Stopping existing application..."
     pm2 stop cocktail-menu
     pm2 delete cocktail-menu
@@ -116,6 +158,12 @@ view_logs() {
 regenerate_data() {
   echo "Regenerating data files..."
   
+  # Check if the application is running
+  if ! check_running; then
+    echo "Error: Application is not running. Start it first with './deploy.sh start'"
+    exit 1
+  fi
+  
   # Delete existing data files
   echo "Cleaning up data files..."
   rm -f recipes-data.json categories-data.json
@@ -137,6 +185,9 @@ case "$1" in
     ;;
   restart)
     restart_app
+    ;;
+  force-restart)
+    force_restart
     ;;
   update)
     update_app
