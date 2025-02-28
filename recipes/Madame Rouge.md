@@ -1,4 +1,4 @@
-# MADAME ROUGE
+# Madame Rouge
 
 ## Ingredients:
 - **2 oz** Single Malt Whisky

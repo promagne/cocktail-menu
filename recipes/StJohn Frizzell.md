@@ -1,4 +1,4 @@
-# ST. John Frizzell Fort Defiance Brooklyn
+# St. John Frizzell Fort Defiance Brooklyn
 
 Named for the 1850s poem by Rudyard Kipling, St. John Frizzell appropriately calls for a brand of Scotch gin by the name of Old Raj and asks to be shaken with cardamom pods, a spice native to India. As with all great tiki drinks, the Gunga Din takes the drinker on a transcontinental journey, just by means of the ingredients in the glass.
 

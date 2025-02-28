@@ -1,4 +1,4 @@
-# The Vallombrosa
+# Vallombrosa
 
 Created by David Wondrich
 

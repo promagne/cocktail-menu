@@ -1,4 +1,4 @@
-# Bourbon Amaro Campari Cocktail
+# BourBamaro
 
 ## Ingredients:
 - **1.5 oz** Bourbon
