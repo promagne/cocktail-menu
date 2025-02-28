@@ -3,7 +3,7 @@ title: Conference
 flavor: []
 favorite: false
 available: true
-alcohol: [Rittenhouse 100 Rye, Buffalo Trace Bourbon]
+alcohol: [Rye, Bourbon, Calvados]
 ---
 # Conference
 ## Brian Miller, 2008

@@ -3,7 +3,7 @@ title: Last Word
 flavor: []
 favorite: false
 available: true
-alcohol: [Beefeater London Dry Gin, Green Chartreuse]
+alcohol: [Gin, Chartreuse]
 ---
 # Last Word
 

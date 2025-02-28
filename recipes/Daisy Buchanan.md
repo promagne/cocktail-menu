@@ -3,7 +3,7 @@ title: Daisy Buchanan
 flavor: []
 favorite: false
 available: true
-alcohol: [Chamomile-Infused Old Rye, Dolin Dry Vermouth]
+alcohol: [Rye, Dry Vermouth]
 ---
 # Daisy Buchanan
 

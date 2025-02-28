@@ -3,7 +3,7 @@ title: Sazerac Variation
 flavor: []
 favorite: false
 available: true
-alcohol: [Rye Whiskey, Cognac]
+alcohol: [Rye, Cognac, Absinthe]
 ---
 # Sazerac Variation
 

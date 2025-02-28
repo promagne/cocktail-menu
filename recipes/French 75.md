@@ -3,7 +3,7 @@ title: French 75
 flavor: []
 favorite: false
 available: true
-alcohol: [Gin, St Germain]
+alcohol: [Gin, St Germain, Prosecco]
 ---
 # French 75
 

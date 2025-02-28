@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const availabilityFilter = document.getElementById('availabilityFilter');
     const favoriteFilter = document.getElementById('favoriteFilter');
     const flavorTagsContainer = document.getElementById('flavorTags');
+    const alcoholTagsContainer = document.getElementById('alcoholTags');
     const cocktailModal = document.getElementById('cocktailModal');
     const cocktailDetail = document.getElementById('cocktailDetail');
     const closeModal = document.querySelector('.close-modal');
@@ -14,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let cocktails = [];
     let activeFlavorTags = [];
     let allFlavorTags = [];
+    let activeAlcoholTags = [];
+    let allAlcoholTags = [];
 
     // Theme Toggle
     themeToggle.addEventListener('click', function() {
@@ -60,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderCocktails() {
         cocktailsGrid.innerHTML = '';
         
-        // Filter cocktails based on search, availability, favorites, and flavor tags
+        // Filter cocktails based on search, availability, favorites, flavor tags, and alcohol tags
         const searchTerm = searchInput.value.toLowerCase();
         const availabilityValue = availabilityFilter.value;
         const favoriteValue = favoriteFilter.value;
@@ -85,7 +88,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 activeFlavorTags.length === 0 || 
                 (cocktail.flavor && activeFlavorTags.every(tag => cocktail.flavor.includes(tag)));
             
-            return matchesSearch && matchesAvailability && matchesFavorite && matchesFlavorTags;
+            // Alcohol tags filter
+            const matchesAlcoholTags = 
+                activeAlcoholTags.length === 0 || 
+                (cocktail.alcohol && activeAlcoholTags.some(tag => cocktail.alcohol.includes(tag)));
+            
+            return matchesSearch && matchesAvailability && matchesFavorite && matchesFlavorTags && matchesAlcoholTags;
         });
         
         if (filteredCocktails.length === 0) {
@@ -124,6 +132,16 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
         }
         
+        // Add alcohol tags if any
+        let alcoholTags = '';
+        if (cocktail.alcohol && cocktail.alcohol.length > 0) {
+            alcoholTags = `
+                <div class="card-alcohol-tags">
+                    ${cocktail.alcohol.map(alcohol => `<span class="card-alcohol-tag">${alcohol}</span>`).join('')}
+                </div>
+            `;
+        }
+        
         // Limit to 4 ingredients
         const displayIngredients = cocktail.ingredients.slice(0, 4);
         const hasMoreIngredients = cocktail.ingredients.length > 4;
@@ -134,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ${statusIndicators}
             </div>
             ${flavorTags}
+            ${alcoholTags}
             <div class="ingredients-list">
                 ${displayIngredients.map(ingredient => `<span class="ingredient">${ingredient}</span>`).join('')}
                 ${hasMoreIngredients ? '<span class="ingredient more">+more</span>' : ''}
@@ -175,12 +194,23 @@ document.addEventListener('DOMContentLoaded', function() {
                     `;
                 }
                 
+                // Add alcohol tags if any
+                let alcoholTags = '';
+                if (cocktail.alcohol && cocktail.alcohol.length > 0) {
+                    alcoholTags = `
+                        <div class="detail-alcohol-tags">
+                            ${cocktail.alcohol.map(alcohol => `<span class="detail-alcohol-tag">${alcohol}</span>`).join('')}
+                        </div>
+                    `;
+                }
+                
                 cocktailDetail.innerHTML = `
                     <div class="detail-header">
                         <h2>${cocktail.name}</h2>
                         ${statusIndicators}
                     </div>
                     ${flavorTags}
+                    ${alcoholTags}
                     <div class="detail-content">${html}</div>
                 `;
                 
@@ -195,16 +225,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Extract all unique flavor tags from cocktails
     function extractFlavorTags() {
-        const tags = new Set();
-        
+        const tagsSet = new Set();
         cocktails.forEach(cocktail => {
             if (cocktail.flavor && Array.isArray(cocktail.flavor)) {
-                cocktail.flavor.forEach(tag => tags.add(tag));
+                cocktail.flavor.forEach(tag => tagsSet.add(tag));
             }
         });
-        
-        allFlavorTags = Array.from(tags).sort();
-        renderFlavorTags();
+        allFlavorTags = Array.from(tagsSet).sort();
+    }
+    
+    // Extract all unique alcohol types from cocktails
+    function extractAlcoholTags() {
+        const tagsSet = new Set();
+        cocktails.forEach(cocktail => {
+            if (cocktail.alcohol && Array.isArray(cocktail.alcohol)) {
+                cocktail.alcohol.forEach(tag => tagsSet.add(tag));
+            }
+        });
+        allAlcoholTags = Array.from(tagsSet).sort();
     }
     
     // Render flavor tags for filtering
@@ -212,34 +250,70 @@ document.addEventListener('DOMContentLoaded', function() {
         flavorTagsContainer.innerHTML = '';
         
         if (allFlavorTags.length === 0) {
-            flavorTagsContainer.innerHTML = '<span class="no-tags">No flavor tags available</span>';
+            flavorTagsContainer.innerHTML = '<div class="no-tags">No flavor tags available</div>';
             return;
         }
         
         allFlavorTags.forEach(tag => {
             const tagEl = document.createElement('div');
-            tagEl.className = 'flavor-tag';
+            tagEl.className = 'tag';
             tagEl.textContent = tag;
             
             if (activeFlavorTags.includes(tag)) {
                 tagEl.classList.add('active');
             }
             
-            tagEl.addEventListener('click', () => {
-                // Toggle active state
+            tagEl.addEventListener('click', function() {
                 if (activeFlavorTags.includes(tag)) {
+                    // Remove tag from active tags
                     activeFlavorTags = activeFlavorTags.filter(t => t !== tag);
                     tagEl.classList.remove('active');
                 } else {
+                    // Add tag to active tags
                     activeFlavorTags.push(tag);
                     tagEl.classList.add('active');
                 }
                 
-                // Apply filters
                 renderCocktails();
             });
             
             flavorTagsContainer.appendChild(tagEl);
+        });
+    }
+    
+    // Render alcohol tags for filtering
+    function renderAlcoholTags() {
+        alcoholTagsContainer.innerHTML = '';
+        
+        if (allAlcoholTags.length === 0) {
+            alcoholTagsContainer.innerHTML = '<div class="no-tags">No alcohol types available</div>';
+            return;
+        }
+        
+        allAlcoholTags.forEach(tag => {
+            const tagEl = document.createElement('div');
+            tagEl.className = 'tag';
+            tagEl.textContent = tag;
+            
+            if (activeAlcoholTags.includes(tag)) {
+                tagEl.classList.add('active');
+            }
+            
+            tagEl.addEventListener('click', function() {
+                if (activeAlcoholTags.includes(tag)) {
+                    // Remove tag from active tags
+                    activeAlcoholTags = activeAlcoholTags.filter(t => t !== tag);
+                    tagEl.classList.remove('active');
+                } else {
+                    // Add tag to active tags
+                    activeAlcoholTags.push(tag);
+                    tagEl.classList.add('active');
+                }
+                
+                renderCocktails();
+            });
+            
+            alcoholTagsContainer.appendChild(tagEl);
         });
     }
 
@@ -262,6 +336,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 renderCocktails();
                 extractFlavorTags();
                 renderFlavorTags();
+                extractAlcoholTags();
+                renderAlcoholTags();
             })
             .catch(error => {
                 console.error('Error fetching cocktails from API:', error);
@@ -282,6 +358,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         renderCocktails();
                         extractFlavorTags();
                         renderFlavorTags();
+                        extractAlcoholTags();
+                        renderAlcoholTags();
                     })
                     .catch(fallbackError => {
                         console.error('Error fetching cocktails from fallback:', fallbackError);

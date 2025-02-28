@@ -3,7 +3,7 @@ title: Monte Casino
 flavor: []
 favorite: false
 available: true
-alcohol: []
+alcohol: [Rye, Benedictine, Chartreuse]
 ---
 # Monte Casino
 

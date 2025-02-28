@@ -2,8 +2,8 @@
 title: Peach Bellini
 flavor: []
 favorite: false
-available: true
-alcohol: [Cointreau, Jus De Peche]
+available: false
+alcohol: [Cointreau, Prosecco]
 ---
 # Peach Bellini
 

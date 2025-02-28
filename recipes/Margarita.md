@@ -3,7 +3,7 @@ title: Margarita
 flavor: []
 favorite: false
 available: true
-alcohol: [Siembra Azul Blanco Tequila, Cointreau]
+alcohol: [Tequila, Cointreau]
 ---
 # Margarita
 

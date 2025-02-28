@@ -3,7 +3,7 @@ title: Cinnamon-Rimmed Sidecar
 flavor: []
 favorite: false
 available: true
-alcohol: []
+alcohol: [Calvados, Cointreau]
 ---
 # Cinnamon-Rimmed Sidecar  
 

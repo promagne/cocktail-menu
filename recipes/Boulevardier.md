@@ -3,7 +3,7 @@ title: Boulevardier
 flavor: []
 favorite: false
 available: true
-alcohol: [Marker's Mark Bourbon, House Vermouth]
+alcohol: [Bourbon, Vermouth]
 ---
 # Boulevardier
 

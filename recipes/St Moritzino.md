@@ -3,7 +3,7 @@ title: St Moritzino
 flavor: []
 favorite: false
 available: true
-alcohol: [Vodka, Cointreau/triple sec]
+alcohol: [Vodka, Cointreau]
 ---
 # St Moritzino
 

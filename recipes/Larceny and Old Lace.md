@@ -3,7 +3,7 @@ title: Larceny and Old Lace
 flavor: []
 favorite: false
 available: true
-alcohol: [Larceny Bourbon, Carpano Antica Vermouth]
+alcohol: [Bourbon, Vermouth]
 ---
 # Larceny and Old Lace
 

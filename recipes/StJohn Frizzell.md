@@ -3,7 +3,7 @@ title: StJohn Frizzell
 flavor: []
 favorite: false
 available: true
-alcohol: [Cardamom Pods, London Dry Gin]
+alcohol: [CGin]
 ---
 # St. John Frizzell Fort Defiance Brooklyn
 

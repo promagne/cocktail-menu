@@ -3,7 +3,7 @@ title: Calva Apple
 flavor: []
 favorite: false
 available: true
-alcohol: []
+alcohol: [Calvados, Vermouth]
 ---
 # Calva Apple
   

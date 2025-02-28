@@ -3,7 +3,7 @@ title: Manhattan
 flavor: []
 favorite: false
 available: true
-alcohol: [Bourbon or rye, Vermouth]
+alcohol: [Bourbon, Vermouth]
 ---
 # Manhattan
 

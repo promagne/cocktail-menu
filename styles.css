@@ -10,6 +10,13 @@
     --font-family: Consolas, "Courier New", monospace;
     --indicator-bg: rgba(127, 127, 127, 0.1);
     --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --tag-bg: #e5e5e5;
+    --tag-text: #333;
+    --tag-hover-bg: #ddd;
+    --tag-active-bg: #2196F3;
+    --tag-active-text: #fff;
+    --alcohol-tag-bg: #5a3e36;
+    --alcohol-tag-text: #ffffff;
 }
 
 body {
@@ -31,6 +38,13 @@ body.dark-mode {
     --header-bg: #1f1f1f;
     --indicator-bg: rgba(255, 255, 255, 0.1);
     --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --tag-bg: #333;
+    --tag-text: #ddd;
+    --tag-hover-bg: #444;
+    --tag-active-bg: #1976D2;
+    --tag-active-text: #fff;
+    --alcohol-tag-bg: #6b4f47;
+    --alcohol-tag-text: #ffffff;
 }
 
 .container {
@@ -146,15 +160,41 @@ body.dark-mode .search-container input:focus {
     font-size: 13px;
 }
 
+.flavor-filter,
+.alcohol-filter {
+    margin-top: 16px;
+}
+
 .flavor-filter {
     flex-grow: 1;
     flex-basis: 100%;
 }
 
-.flavor-tags-container {
+.flavor-tags-container,
+.alcohol-tags-container {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-top: 8px;
+}
+
+.tag {
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background-color: var(--tag-hover-bg);
+}
+
+.tag.active {
+    background-color: var(--tag-active-bg);
+    color: var(--tag-active-text);
 }
 
 .flavor-tag {
@@ -176,6 +216,28 @@ body.dark-mode .search-container input:focus {
     background-color: var(--accent-color);
     opacity: 0.8;
     color: white;
+}
+
+.card-flavor-tags,
+.card-alcohol-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.card-flavor-tag,
+.card-alcohol-tag {
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+}
+
+.card-alcohol-tag {
+    background-color: var(--alcohol-tag-bg, #5a3e36);
+    color: var(--alcohol-tag-text, #ffffff);
 }
 
 /* Cocktail Grid */
@@ -257,21 +319,6 @@ body.dark-mode .search-container input:focus {
 body.dark-mode .cocktail-card .favorite-indicator,
 body.dark-mode .cocktail-card .unavailable-indicator {
     background-color: rgba(50, 50, 50, 0.8);
-}
-
-.card-flavor-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    margin-bottom: 8px;
-}
-
-.card-flavor-tag {
-    font-size: 11px;
-    padding: 2px 6px;
-    border-radius: 12px;
-    background-color: var(--indicator-bg);
-    color: var(--text-color);
 }
 
 .ingredients-list {
@@ -394,19 +441,26 @@ body.dark-mode .cocktail-card .unavailable-indicator {
     font-size: 24px;
 }
 
-.detail-flavor-tags {
+.detail-flavor-tags,
+.detail-alcohol-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin-bottom: 16px;
 }
 
-.detail-flavor-tag {
-    font-size: 12px;
-    padding: 4px 8px;
-    border-radius: 16px;
-    background-color: var(--indicator-bg);
-    color: var(--text-color);
+.detail-flavor-tag,
+.detail-alcohol-tag {
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 3px 8px;
+    border-radius: 14px;
+    font-size: 0.8rem;
+}
+
+.detail-alcohol-tag {
+    background-color: var(--alcohol-tag-bg, #5a3e36);
+    color: var(--alcohol-tag-text, #ffffff);
 }
 
 .detail-content {
@@ -428,7 +482,7 @@ body.dark-mode .cocktail-card .unavailable-indicator {
 .no-tags {
     color: var(--text-secondary);
     font-style: italic;
-    font-size: 12px;
+    font-size: 0.9rem;
 }
 
 /* Responsive adjustments */

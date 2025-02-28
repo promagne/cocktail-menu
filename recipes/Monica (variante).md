@@ -3,7 +3,7 @@ title: Monica (variante)
 flavor: []
 favorite: false
 available: true
-alcohol: [Rhum7 years, St-Germain]
+alcohol: [Rum, St-Germain, Prosecco]
 ---
 # Monica Drink Variante
 

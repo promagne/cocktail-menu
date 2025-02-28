@@ -3,7 +3,7 @@ title: Cobra Verde
 flavor: []
 favorite: false
 available: true
-alcohol: [Neisson Rhum Agricole Blanc, Chamomile-infused Old Overholt Rye]
+alcohol: [Rum, Rye]
 ---
 # Cobra Verde
 

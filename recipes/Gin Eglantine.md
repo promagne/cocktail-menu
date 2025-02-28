@@ -3,7 +3,7 @@ title: Gin Eglantine
 flavor: []
 favorite: false
 available: true
-alcohol: [Gin Botanist, St Germain]
+alcohol: [Gin, St Germain]
 ---
 # Gin Eglantine
 

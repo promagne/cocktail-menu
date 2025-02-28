@@ -3,7 +3,7 @@ title: Strawberry Negroni
 flavor: [sweet, bitter]
 favorite: false
 available: true
-alcohol: [Gin, Campari*]
+alcohol: [Gin, Campari, Vermouth]
 ---
 # Strawberry Negroni
 

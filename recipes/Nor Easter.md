@@ -3,7 +3,7 @@ title: Nor Easter
 flavor: []
 favorite: false
 available: true
-alcohol: []
+alcohol: [Bourbon]
 ---
 ## Ingredients:
 

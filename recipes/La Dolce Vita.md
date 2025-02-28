@@ -3,7 +3,7 @@ title: La Dolce Vita
 flavor: []
 favorite: false
 available: true
-alcohol: [Chamomile-infused Old Overholt Rye, Campari]
+alcohol: [Rye, Campari, st-Germain]
 ---
 # La Dolce Vita
 

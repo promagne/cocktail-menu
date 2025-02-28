@@ -3,7 +3,7 @@ title: RaedLover
 flavor: []
 favorite: false
 available: true
-alcohol: []
+alcohol: [Rum, Cointreau, Soho]
 ---
 # RaedLover
 
@@ -12,17 +12,11 @@ alcohol: []
 ## Ingredients:
 
 - 0.5 Oz Over Proof Run
-
 - 1oz Rum
-
 - 0.75oz Soho
-
 - 1oz Orange Juice
-
 - 0.5oz Lime
-
 - 1oz Cointreau
-
 - Check In A Shaker
 
   

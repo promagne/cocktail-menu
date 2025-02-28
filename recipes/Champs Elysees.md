@@ -3,7 +3,7 @@ title: Champs Elysees
 flavor: []
 favorite: false
 available: true
-alcohol: [Cognac, Green Chartreuse]
+alcohol: [Cognac, Chartreuse]
 ---
 # Champs-Élysees
 

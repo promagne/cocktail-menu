@@ -3,7 +3,7 @@ title: Millionaire Cocktail
 flavor: []
 favorite: false
 available: true
-alcohol: [Jamaican Rum, Apricot Liqueur]
+alcohol: [Rum, Gin]
 ---
 # Millionaire Cocktail
 

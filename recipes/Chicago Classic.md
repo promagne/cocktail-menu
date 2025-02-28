@@ -3,7 +3,7 @@ title: Chicago Classic
 flavor: []
 favorite: false
 available: true
-alcohol: [Frapin VSOP Cognac, Cointreau]
+alcohol: [Cognac, Cointreau, Prosecco]
 ---
 # Chicago Classic
 

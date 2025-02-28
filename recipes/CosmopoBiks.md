@@ -3,7 +3,7 @@ title: CosmopoBiks
 flavor: []
 favorite: false
 available: true
-alcohol: [Grey Goose, Grenadine]
+alcohol: [Vodka]
 ---
 # CosmopoliBiks
 

@@ -3,7 +3,7 @@ title: Mai thai (Variation)
 flavor: []
 favorite: false
 available: true
-alcohol: [Amber Rum, Coconut Rum]
+alcohol: [Rum, Cointreau]
 ---
 # Mai Tai 
 

@@ -3,7 +3,7 @@ title: Strawberry Bourbon
 flavor: []
 favorite: false
 available: true
-alcohol: [Strawberries]
+alcohol: [Bourbon]
 ---
 # Strawberry Bourbon Cocktail
 

@@ -3,7 +3,7 @@ title: Monteverde's apple kitchen
 flavor: []
 favorite: false
 available: true
-alcohol: [Japanese Whisky, Calvados Or Apple Brandy]
+alcohol: [Whisky, Calvados, Amaro]
 ---
 # Monteverde's Apple Kickin' Cocktail
 

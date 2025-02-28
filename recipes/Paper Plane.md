@@ -3,7 +3,7 @@ title: Paper Plane
 flavor: []
 favorite: false
 available: true
-alcohol: [Bourbon, Aperol]
+alcohol: [Bourbon, Aperol, Amaro]
 ---
 # Paper Plane
 

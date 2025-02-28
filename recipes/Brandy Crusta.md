@@ -3,7 +3,7 @@ title: Brandy Crusta
 flavor: []
 favorite: false
 available: true
-alcohol: [Kelt VSOP Cognac, Cointreau]
+alcohol: [Cognac, Cointreau]
 ---
 # Brandy Crusta
 

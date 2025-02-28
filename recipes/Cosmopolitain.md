@@ -3,7 +3,7 @@ title: Cosmopolitain
 flavor: []
 favorite: false
 available: true
-alcohol: [Vodka Grey Goose, Cointreau]
+alcohol: [Vodka, Cointreau]
 ---
 # Cosmopolitain
 

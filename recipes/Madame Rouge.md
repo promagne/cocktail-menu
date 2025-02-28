@@ -3,7 +3,7 @@ title: Madame Rouge
 flavor: []
 favorite: false
 available: true
-alcohol: [Single Malt Whisky, Amaro]
+alcohol: [Whisky, Amaro, Prosecco]
 ---
 # Madame Rouge
 

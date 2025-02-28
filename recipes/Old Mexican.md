@@ -3,7 +3,7 @@ title: Old Mexican
 flavor: []
 favorite: false
 available: true
-alcohol: [Blanco Tequila, Mint Leaves]
+alcohol: [Tequila]
 ---
 # Old Mexican
 

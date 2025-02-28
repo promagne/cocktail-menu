@@ -3,7 +3,7 @@ title: RhumOne
 flavor: []
 favorite: false
 available: true
-alcohol: [Rum El Dorado, Over Proof Rum]
+alcohol: [Rum, Malibu]
 ---
 # Tropical Rum Cocktail
 
