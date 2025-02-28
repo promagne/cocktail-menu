@@ -110,16 +110,45 @@ button:hover {
     margin-bottom: 24px;
 }
 
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .search-container input {
     width: 100%;
-    padding: 8px 12px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
+    padding: 12px 16px;
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
     font-family: var(--font-family);
     background-color: var(--card-bg);
     color: var(--text-color);
-    font-size: 14px;
-    margin-bottom: 12px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.25);
+    border-color: var(--accent-color);
+}
+
+.search-container input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* Dark mode specific search styling */
+body.dark-mode .search-container input {
+    background-color: #3a3a3a;
+    border-color: var(--accent-color);
+}
+
+body.dark-mode .search-container input:focus {
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
 }
 
 /* Filter Container Styles */

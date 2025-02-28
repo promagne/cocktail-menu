@@ -25,12 +25,30 @@ document.addEventListener('DOMContentLoaded', function() {
     themeToggle.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
         localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        updateThemeButtonText();
     });
 
-    // Check for saved theme preference
-    if (localStorage.getItem('darkMode') === 'true') {
+    // Set dark mode by default or check for saved preference
+    if (localStorage.getItem('darkMode') === null) {
+        // No preference saved, set dark mode by default
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'true');
+    } else if (localStorage.getItem('darkMode') === 'true') {
+        // User previously selected dark mode
         document.body.classList.add('dark-mode');
     }
+    
+    // Update theme button text based on current mode
+    function updateThemeButtonText() {
+        if (document.body.classList.contains('dark-mode')) {
+            themeToggle.textContent = 'Switch to Light Mode';
+        } else {
+            themeToggle.textContent = 'Switch to Dark Mode';
+        }
+    }
+    
+    // Initialize theme button text
+    updateThemeButtonText();
 
     // Tab Navigation
     tabButtons.forEach(button => {
