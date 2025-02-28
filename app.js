@@ -112,15 +112,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const card = document.createElement('div');
         card.className = 'cocktail-card';
         
-        // Add availability and favorite indicators
-        let statusIndicators = '<div class="status-indicators">';
+        // Add status indicators (available/favorite)
+        let statusIndicators = '';
         if (!cocktail.available) {
-            statusIndicators += '<span class="unavailable-indicator">✕</span>';
+            statusIndicators += '<span class="status-indicator unavailable">✕</span>';
         }
         if (cocktail.favorite) {
-            statusIndicators += '<span class="favorite-indicator">★</span>';
+            statusIndicators += '<span class="status-indicator favorite">★</span>';
         }
-        statusIndicators += '</div>';
         
         // Add flavor tags if any
         let flavorTags = '';
@@ -128,16 +127,6 @@ document.addEventListener('DOMContentLoaded', function() {
             flavorTags = `
                 <div class="card-flavor-tags">
                     ${cocktail.flavor.map(flavor => `<span class="card-flavor-tag">${flavor}</span>`).join('')}
-                </div>
-            `;
-        }
-        
-        // Add alcohol tags if any
-        let alcoholTags = '';
-        if (cocktail.alcohol && cocktail.alcohol.length > 0) {
-            alcoholTags = `
-                <div class="card-alcohol-tags">
-                    ${cocktail.alcohol.map(alcohol => `<span class="card-alcohol-tag">${alcohol}</span>`).join('')}
                 </div>
             `;
         }
@@ -152,13 +141,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 ${statusIndicators}
             </div>
             ${flavorTags}
-            ${alcoholTags}
             <div class="ingredients-list">
                 ${displayIngredients.map(ingredient => `<span class="ingredient">${ingredient}</span>`).join('')}
                 ${hasMoreIngredients ? '<span class="ingredient more">+more</span>' : ''}
             </div>
         `;
-        card.addEventListener('click', () => showCocktailDetail(cocktail));
+        
+        // Add click event to show detail
+        card.addEventListener('click', function() {
+            showCocktailDetail(cocktail);
+        });
+        
         return card;
     }
 

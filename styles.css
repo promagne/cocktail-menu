@@ -265,60 +265,34 @@ body.dark-mode .search-container input:focus {
 .card-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 8px;
 }
 
 .card-header h3 {
     margin: 0;
-    font-size: 16px;
-    flex-grow: 1;
-}
-
-.status-indicators {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    gap: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .status-indicator {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--indicator-bg);
+    margin-left: 4px;
     font-size: 12px;
-    padding: 2px 6px;
-    border-radius: 12px;
-    white-space: nowrap;
 }
 
-.cocktail-card .favorite-indicator {
-    color: #ff9800;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.cocktail-card .unavailable-indicator {
+.status-indicator.unavailable {
     color: #f44336;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-body.dark-mode .cocktail-card .favorite-indicator,
-body.dark-mode .cocktail-card .unavailable-indicator {
-    background-color: rgba(50, 50, 50, 0.8);
+.status-indicator.favorite {
+    color: #ffc107;
 }
 
 .ingredients-list {
