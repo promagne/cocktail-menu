@@ -1,5 +1,5 @@
-# AMARO DI COCCO
-## RYAN LOTZ, SHORE LEAVE, BOSTON
+# Amaro Di Cocco
+## Description
 
 A mash-up of a Piña Colada and a Negroni, the Amaro di Cocco marries Campari and sweet vermouth with Jamaican rum, coconut cream, and pineapple juice.
 
