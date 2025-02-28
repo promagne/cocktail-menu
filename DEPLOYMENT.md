@@ -21,46 +21,73 @@ This guide will help you deploy the Cocktail Menu website on a web server.
    npm install
    ```
 
-3. **Configure the server (optional)**
-   
-   By default, the server runs on port 3000. If you need to change this (for example, to use port 80 for HTTP), edit the `server.js` file:
-   
-   ```javascript
-   // Change this line in server.js
-   const PORT = process.env.PORT || 3000;
-   
-   // To use a different port, for example:
-   const PORT = process.env.PORT || 80;
+3. **Make the deployment script executable**
+   ```bash
+   chmod +x deploy.sh
    ```
 
-4. **Start the server**
-   
-   For a quick test:
+4. **Start the server using the deployment script**
    ```bash
-   node server.js
+   ./deploy.sh start
    ```
    
    The server should start and display: "Server running at http://your-ip:port"
 
+## Using the Deployment Script
+
+The cocktail-menu application comes with a powerful deployment script that handles various aspects of deployment and maintenance:
+
+```bash
+./deploy.sh [command]
+```
+
+Available commands:
+
+- `start` - Start the application
+- `stop` - Stop the application
+- `restart` - Restart the application
+- `force-restart` - Force restart the application (stop and start)
+- `update` - Pull latest changes and restart
+- `status` - Check application status
+- `logs` - View application logs
+- `regenerate` - Regenerate data files
+- `cleanup` - Clean up stale processes and ports
+
+## Updating Recipes
+
+To update recipes on the server:
+
+1. **Navigate to the cocktail-menu directory**
+   ```bash
+   cd ~/cocktail-menu
+   ```
+
+2. **Pull the latest changes from GitHub**
+   ```bash
+   git pull
+   ```
+
+3. **Restart the application to regenerate data files**
+   ```bash
+   ./deploy.sh force-restart
+   ```
+
+This will pull the latest recipe files, stop the current server, and start a fresh instance that will generate new data files with the updated recipes.
+
 ## Running as a Service
 
-To keep the server running after you log out, you can use a process manager like PM2:
+To keep the server running after you log out, you can use PM2 (which is already used by the deployment script):
 
-1. **Install PM2 globally**
+1. **Save the PM2 process list to be restored on reboot**
    ```bash
-   npm install -g pm2
-   ```
-
-2. **Start the application with PM2**
-   ```bash
-   pm2 start server.js --name "cocktail-menu"
-   ```
-
-3. **Configure PM2 to start on system boot**
-   ```bash
-   pm2 startup
    pm2 save
    ```
+
+2. **Configure PM2 to start on system boot**
+   ```bash
+   pm2 startup
+   ```
+   Then follow the instructions displayed by the command.
 
 ## Configuring Nginx as a Reverse Proxy (Recommended)
 
@@ -121,16 +148,39 @@ sudo certbot --nginx -d yourdomain.com  # Replace with your domain
 
 ## Troubleshooting
 
-- **Server not starting**: Check for error messages in the console
-- **Cannot access the website**: Verify firewall settings and that the server is running
-- **Missing data**: Ensure the server has generated the data files (recipes-data.json and categories-data.json)
+- **Port conflicts**: If you encounter port conflicts (EADDRINUSE errors), use the cleanup command:
+  ```bash
+  ./deploy.sh cleanup
+  ```
+  
+- **Application not starting**: Check the logs for errors:
+  ```bash
+  ./deploy.sh logs
+  ```
 
-## Updating the Website
+- **Missing data**: If recipe data isn't showing up, regenerate the data files:
+  ```bash
+  ./deploy.sh regenerate
+  ```
 
-To update the website with new changes:
+- **PM2 errors**: If PM2 shows errors, try a force restart:
+  ```bash
+  ./deploy.sh force-restart
+  ```
 
-```bash
-git pull  # If you used git to clone the repository
-npm install  # If there are new dependencies
-pm2 restart cocktail-menu  # If using PM2
-```
+## Server Maintenance
+
+- **Checking server status**:
+  ```bash
+  ./deploy.sh status
+  ```
+
+- **Viewing logs**:
+  ```bash
+  ./deploy.sh logs
+  ```
+
+- **Updating the application**:
+  ```bash
+  ./deploy.sh update
+  ```
