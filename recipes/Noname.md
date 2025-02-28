@@ -1,7 +1,7 @@
 ---
 title: Noname
 flavor: []
-favorite: false
+favorite: true
 available: true
 ---
 # Noname

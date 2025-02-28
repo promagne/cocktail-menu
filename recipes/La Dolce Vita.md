@@ -1,8 +1,8 @@
 ---
 title: La Dolce Vita
 flavor: []
-favorite: false
-available: true
+favorite: true
+available: false
 ---
 # La Dolce Vita
 

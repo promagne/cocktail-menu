@@ -1,8 +1,8 @@
 ---
 title: Nor Easter
 flavor: []
-favorite: false
-available: true
+favorite: true
+available: false
 ---
 ## Ingredients:
 

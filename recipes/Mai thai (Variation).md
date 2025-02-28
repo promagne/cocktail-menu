@@ -1,7 +1,7 @@
 ---
 title: Mai thai (Variation)
 flavor: []
-favorite: false
+favorite: true
 available: true
 ---
 # Mai Tai 
@@ -20,6 +20,3 @@ available: true
 3. Shake well until chilled.  
 4. Strain into a glass filled with ice.  
 5.
-
-
-

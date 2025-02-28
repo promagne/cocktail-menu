@@ -7,15 +7,16 @@ available: true
 # Boulevardier
 
 ## Ingredients:
-- **1½ Ounces** Elijah Craig12-YEAR BOURBON
-- **¾ Ounce** House Sweet Vermouth(PAGE 284)
-- **¾ Ounce** Campari
+- **1½ Ounces** Marker's Mark Bourbon
+- **3/4 Ounce** House Sweet Vermouth
+- **3/4 Ounce** Campari
 
 ## Garnish: 
 1 Lemon Twist
 
 ## Instructions:
-Stir all the ingredients over ice, then strain into a coupe. Garnish with the lemon twist.
+1. Stir all the ingredients over ice, then strain into a coupe. 
+2. Garnish with the lemon twist.
 
 
 
