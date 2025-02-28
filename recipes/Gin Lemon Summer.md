@@ -1,3 +1,9 @@
+---
+title: Gin Lemon Summer
+flavor: []
+favorite: false
+available: true
+---
 # New Summer Drink
 
 ## Ingredients:
@@ -11,3 +17,6 @@
 1. Shake super frosty
 
 Delicious. New summer drink
+
+
+

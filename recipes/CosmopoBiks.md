@@ -1,3 +1,9 @@
+---
+title: CosmopoBiks
+flavor: []
+favorite: false
+available: true
+---
 # CosmopoliBiks
 
 ## Ingredients:
@@ -11,3 +17,6 @@
 ## Instructions:
 1. Shake with ice
 2. In a coupe glass
+
+
+

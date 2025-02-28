@@ -1,3 +1,9 @@
+---
+title: Madame Rouge
+flavor: []
+favorite: false
+available: true
+---
 # Madame Rouge
 
 ## Ingredients:
@@ -7,3 +13,6 @@
 
 ## Instructions
 Place the whisky and Amaro in a mixing glass filled with ice, stir, and strain into a chilled champagne flute. Top with the sparkling wine.
+
+
+

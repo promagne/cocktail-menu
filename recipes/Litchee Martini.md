@@ -1,3 +1,9 @@
+---
+title: Litchee Martini
+flavor: []
+favorite: false
+available: true
+---
 # Litchee Martini
 
 ## Ingredients:
@@ -8,3 +14,6 @@
 ## Instructions:
 1. Stir lot of ice
 2. Add litchee to garnish
+
+
+

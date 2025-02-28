@@ -1,3 +1,9 @@
+---
+title: Rhumination
+flavor: []
+favorite: false
+available: true
+---
 # Rhumination
 
 ## Ingredients:
@@ -9,3 +15,6 @@
 
 ## Instructions:
 1. Shake
+
+
+

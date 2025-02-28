@@ -1,3 +1,9 @@
+---
+title: Martini
+flavor: []
+favorite: false
+available: true
+---
 # Perfect Solution Martini
 
 ## Ingredients:
@@ -8,3 +14,6 @@
 ## Instructions:
 1. Stir assez longtemps genre 30 secondes avec verre plein de glaçons
 2. T'auras la solution parfaite
+
+
+

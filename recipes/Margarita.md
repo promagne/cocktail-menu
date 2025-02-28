@@ -1,3 +1,9 @@
+---
+title: Margarita
+flavor: []
+favorite: false
+available: true
+---
 # Margarita
 
 ## Ingredients:
@@ -12,3 +18,6 @@
 1. Rim half of a double rocks glass with salt.
 2. Shake all the ingredients with ice, then strain into the rimmed glass over ice cubes.
 3. Garnish with the lime wedge.
+
+
+

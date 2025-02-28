@@ -1,3 +1,9 @@
+---
+title: Boulevardier
+flavor: []
+favorite: false
+available: true
+---
 # Boulevardier
 
 ## Ingredients:
@@ -10,4 +16,7 @@
 
 ## Instructions:
 Stir all the ingredients over ice, then strain into a coupe. Garnish with the lemon twist.
+
+
+
 

@@ -1,3 +1,9 @@
+---
+title: Old Mexican
+flavor: []
+favorite: false
+available: true
+---
 # Old Mexican
 
 ## Ingredients:
@@ -13,3 +19,6 @@
 
 Glass: Old Fashioned
 Garnish: small dried rose bud
+
+
+

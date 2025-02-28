@@ -1,3 +1,9 @@
+---
+title: Brandy Crusta
+flavor: [citrusy, sweet, strong]
+favorite: true
+available: true
+---
 # Brandy Crusta
 
 ## Ingredients:

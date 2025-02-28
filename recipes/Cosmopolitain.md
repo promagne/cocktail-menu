@@ -1,3 +1,9 @@
+---
+title: Cosmopolitain
+flavor: []
+favorite: false
+available: true
+---
 # Cosmopolitain
 
 ## Ingredients:
@@ -10,3 +16,6 @@
 ## Instructions:
 1. Pour un verre haut.
 2. Shake it in ice
+
+
+

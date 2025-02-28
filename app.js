@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const alcoholCategories = document.getElementById('alcoholCategories');
     const categoryCocktails = document.getElementById('categoryCocktails');
     const searchInput = document.getElementById('searchInput');
+    const availabilityFilter = document.getElementById('availabilityFilter');
+    const favoriteFilter = document.getElementById('favoriteFilter');
+    const flavorTagsContainer = document.getElementById('flavorTags');
     const cocktailModal = document.getElementById('cocktailModal');
     const cocktailDetail = document.getElementById('cocktailDetail');
     const closeModal = document.querySelector('.close-modal');
@@ -15,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let cocktails = [];
     let categories = [];
     let selectedCategory = null;
+    let activeFlavorTags = [];
+    let allFlavorTags = [];
 
     // Theme Toggle
     themeToggle.addEventListener('click', function() {
@@ -53,17 +58,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Search functionality
-    searchInput.addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase();
-        filterCocktails(searchTerm);
-    });
-
-    // Filter cocktails based on search term
-    function filterCocktails(searchTerm) {
-        const filteredCocktails = cocktails.filter(cocktail => 
-            cocktail.name.toLowerCase().includes(searchTerm)
-        );
+    // Filter cocktails based on search term and filters
+    function filterCocktails() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const availabilityValue = availabilityFilter.value;
+        const favoriteValue = favoriteFilter.value;
+        
+        const filteredCocktails = cocktails.filter(cocktail => {
+            // Search term filter
+            const matchesSearch = cocktail.name.toLowerCase().includes(searchTerm);
+            
+            // Availability filter
+            let matchesAvailability = true;
+            if (availabilityValue === 'available') {
+                matchesAvailability = cocktail.available === true;
+            } else if (availabilityValue === 'unavailable') {
+                matchesAvailability = cocktail.available === false;
+            }
+            
+            // Favorite filter
+            let matchesFavorite = true;
+            if (favoriteValue === 'favorite') {
+                matchesFavorite = cocktail.favorite === true;
+            }
+            
+            // Flavor tags filter
+            let matchesFlavorTags = true;
+            if (activeFlavorTags.length > 0) {
+                matchesFlavorTags = activeFlavorTags.every(tag => 
+                    cocktail.flavor && cocktail.flavor.includes(tag)
+                );
+            }
+            
+            return matchesSearch && matchesAvailability && matchesFavorite && matchesFlavorTags;
+        });
+        
         renderCocktailsGrid(filteredCocktails);
     }
 
@@ -98,16 +127,45 @@ document.addEventListener('DOMContentLoaded', function() {
     // Render cocktails grid
     function renderCocktailsGrid(cocktailsToRender) {
         cocktailsGrid.innerHTML = '';
+        
+        if (cocktailsToRender.length === 0) {
+            cocktailsGrid.innerHTML = '<div class="no-results">No cocktails match your filters</div>';
+            return;
+        }
+        
         cocktailsToRender.forEach(cocktail => {
             const card = document.createElement('div');
             card.className = 'cocktail-card';
+            
+            // Add availability and favorite indicators
+            let statusIndicators = '';
+            if (!cocktail.available) {
+                statusIndicators += '<span class="status-indicator unavailable">Unavailable</span>';
+            }
+            if (cocktail.favorite) {
+                statusIndicators += '<span class="status-indicator favorite">★</span>';
+            }
+            
+            // Add flavor tags if any
+            let flavorTags = '';
+            if (cocktail.flavor && cocktail.flavor.length > 0) {
+                flavorTags = `
+                    <div class="card-flavor-tags">
+                        ${cocktail.flavor.map(flavor => `<span class="card-flavor-tag">${flavor}</span>`).join('')}
+                    </div>
+                `;
+            }
             
             // Limit to 4 ingredients
             const displayIngredients = cocktail.ingredients.slice(0, 4);
             const hasMoreIngredients = cocktail.ingredients.length > 4;
             
             card.innerHTML = `
-                <h3>${cocktail.name}</h3>
+                <div class="card-header">
+                    <h3>${cocktail.name}</h3>
+                    <div class="status-indicators">${statusIndicators}</div>
+                </div>
+                ${flavorTags}
                 <div class="ingredients-list">
                     ${displayIngredients.map(ingredient => `<span class="ingredient">${ingredient}</span>`).join('')}
                     ${hasMoreIngredients ? '<span class="ingredient more">+more</span>' : ''}
@@ -122,18 +180,21 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderAlcoholCategories() {
         alcoholCategories.innerHTML = '';
         categories.forEach(category => {
-            const button = document.createElement('button');
-            button.className = 'category-btn';
-            button.textContent = category.name;
-            button.addEventListener('click', () => {
-                document.querySelectorAll('.category-btn').forEach(btn => 
-                    btn.classList.remove('active')
-                );
-                button.classList.add('active');
+            const categoryEl = document.createElement('div');
+            categoryEl.className = 'alcohol-category';
+            categoryEl.textContent = category.name;
+            categoryEl.addEventListener('click', () => {
+                // Remove active class from all categories
+                document.querySelectorAll('.alcohol-category').forEach(el => {
+                    el.classList.remove('active');
+                });
+                
+                // Add active class to clicked category
+                categoryEl.classList.add('active');
                 selectedCategory = category;
                 renderCategoryCocktails(category);
             });
-            alcoholCategories.appendChild(button);
+            alcoholCategories.appendChild(categoryEl);
         });
     }
 
@@ -141,78 +202,155 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderCategoryCocktails(category) {
         categoryCocktails.innerHTML = '';
         
-        // Get cocktails for this category
-        const categoryCocktailsList = cocktails.filter(cocktail => 
+        // Filter cocktails by selected category
+        const filteredCocktails = cocktails.filter(cocktail => 
             cocktail.alcoholTypes.includes(category.name)
         );
         
-        categoryCocktailsList.forEach(cocktail => {
-            const card = document.createElement('div');
-            card.className = 'cocktail-card';
+        if (filteredCocktails.length === 0) {
+            categoryCocktails.innerHTML = `<div class="no-results">No cocktails found for ${category.name}</div>`;
+            return;
+        }
+        
+        filteredCocktails.forEach(cocktail => {
+            const cocktailEl = document.createElement('div');
+            cocktailEl.className = 'category-cocktail';
             
-            // Limit to 4 ingredients
-            const displayIngredients = cocktail.ingredients.slice(0, 4);
-            const hasMoreIngredients = cocktail.ingredients.length > 4;
+            // Add availability and favorite indicators
+            let statusIndicators = '';
+            if (!cocktail.available) {
+                statusIndicators += '<span class="status-indicator unavailable">Unavailable</span>';
+            }
+            if (cocktail.favorite) {
+                statusIndicators += '<span class="status-indicator favorite">★</span>';
+            }
             
-            card.innerHTML = `
-                <h3>${cocktail.name}</h3>
-                <div class="ingredients-list">
-                    ${displayIngredients.map(ingredient => `<span class="ingredient">${ingredient}</span>`).join('')}
-                    ${hasMoreIngredients ? '<span class="ingredient more">+more</span>' : ''}
-                </div>
+            cocktailEl.innerHTML = `
+                <div class="cocktail-name">${cocktail.name}</div>
+                <div class="status-indicators">${statusIndicators}</div>
             `;
-            card.addEventListener('click', () => showCocktailDetail(cocktail));
-            categoryCocktails.appendChild(card);
+            
+            cocktailEl.addEventListener('click', () => showCocktailDetail(cocktail));
+            categoryCocktails.appendChild(cocktailEl);
         });
     }
 
     // Show cocktail detail in modal
-    async function showCocktailDetail(cocktail) {
-        try {
-            const response = await fetch(cocktail.path);
-            if (!response.ok) {
-                throw new Error('Failed to fetch cocktail details');
-            }
-            const markdown = await response.text();
-            cocktailDetail.innerHTML = marked.parse(markdown);
-            cocktailModal.style.display = 'block';
-        } catch (error) {
-            console.error('Error fetching cocktail details:', error);
-        }
+    function showCocktailDetail(cocktail) {
+        // Fetch the recipe markdown
+        fetch(cocktail.path)
+            .then(response => response.text())
+            .then(markdown => {
+                // Remove frontmatter
+                const contentWithoutFrontmatter = markdown.replace(/^---\n[\s\S]*?\n---\n/, '');
+                
+                // Convert markdown to HTML
+                const html = marked.parse(contentWithoutFrontmatter);
+                
+                // Add availability and favorite indicators
+                let statusIndicators = '';
+                if (!cocktail.available) {
+                    statusIndicators += '<span class="status-indicator unavailable">Unavailable</span>';
+                }
+                if (cocktail.favorite) {
+                    statusIndicators += '<span class="status-indicator favorite">★</span>';
+                }
+                
+                // Add flavor tags if any
+                let flavorTags = '';
+                if (cocktail.flavor && cocktail.flavor.length > 0) {
+                    flavorTags = `
+                        <div class="detail-flavor-tags">
+                            ${cocktail.flavor.map(flavor => `<span class="detail-flavor-tag">${flavor}</span>`).join('')}
+                        </div>
+                    `;
+                }
+                
+                cocktailDetail.innerHTML = `
+                    <div class="detail-header">
+                        <h2>${cocktail.name}</h2>
+                        <div class="status-indicators">${statusIndicators}</div>
+                    </div>
+                    ${flavorTags}
+                    <div class="detail-content">${html}</div>
+                `;
+                
+                cocktailModal.style.display = 'block';
+            })
+            .catch(error => {
+                console.error('Error fetching recipe:', error);
+                cocktailDetail.innerHTML = `<p>Error loading recipe for ${cocktail.name}</p>`;
+                cocktailModal.style.display = 'block';
+            });
     }
 
-    // Generate cocktail and category data JSON files
-    async function generateDataFiles() {
-        try {
-            // This is a placeholder for server-side processing
-            // In a real implementation, this would be done by a server script
-            console.log('Data files would be generated server-side');
-        } catch (error) {
-            console.error('Error generating data files:', error);
+    // Extract all unique flavor tags from cocktails
+    function extractFlavorTags() {
+        const tags = new Set();
+        
+        cocktails.forEach(cocktail => {
+            if (cocktail.flavor && Array.isArray(cocktail.flavor)) {
+                cocktail.flavor.forEach(tag => tags.add(tag));
+            }
+        });
+        
+        allFlavorTags = Array.from(tags).sort();
+        renderFlavorTags();
+    }
+    
+    // Render flavor tags for filtering
+    function renderFlavorTags() {
+        flavorTagsContainer.innerHTML = '';
+        
+        if (allFlavorTags.length === 0) {
+            flavorTagsContainer.innerHTML = '<span class="no-tags">No flavor tags available</span>';
+            return;
         }
+        
+        allFlavorTags.forEach(tag => {
+            const tagEl = document.createElement('div');
+            tagEl.className = 'flavor-tag';
+            tagEl.textContent = tag;
+            
+            if (activeFlavorTags.includes(tag)) {
+                tagEl.classList.add('active');
+            }
+            
+            tagEl.addEventListener('click', () => {
+                // Toggle active state
+                if (activeFlavorTags.includes(tag)) {
+                    activeFlavorTags = activeFlavorTags.filter(t => t !== tag);
+                    tagEl.classList.remove('active');
+                } else {
+                    activeFlavorTags.push(tag);
+                    tagEl.classList.add('active');
+                }
+                
+                // Apply filters
+                filterCocktails();
+            });
+            
+            flavorTagsContainer.appendChild(tagEl);
+        });
     }
 
     // Initialize the application
     async function init() {
-        // In a real implementation, these would be generated server-side
-        // For now, we'll use placeholder data for demonstration
-        await generateDataFiles();
-        
+        // Fetch cocktails and categories
         cocktails = await fetchCocktails();
         categories = await fetchCategories();
         
+        // Extract flavor tags
+        extractFlavorTags();
+        
+        // Render cocktails and categories
         renderCocktailsGrid(cocktails);
         renderAlcoholCategories();
         
-        // Select first category by default
-        if (categories.length > 0) {
-            const firstCategoryBtn = document.querySelector('.category-btn');
-            if (firstCategoryBtn) {
-                firstCategoryBtn.classList.add('active');
-                selectedCategory = categories[0];
-                renderCategoryCocktails(categories[0]);
-            }
-        }
+        // Add event listeners for filters
+        searchInput.addEventListener('input', filterCocktails);
+        availabilityFilter.addEventListener('change', filterCocktails);
+        favoriteFilter.addEventListener('change', filterCocktails);
     }
 
     // Start the app

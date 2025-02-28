@@ -1,3 +1,9 @@
+---
+title: Amaro Di Cocco
+flavor: []
+favorite: false
+available: true
+---
 # Amaro Di Cocco
 ## Description
 
@@ -13,3 +19,6 @@ A mash-up of a Piña Colada and a Negroni, the Amaro di Cocco marries Campari an
 
 ## Instructions:
 Combine all the ingredients in a cocktail shaker. Add 1 cup crushed ice and shake for about 5 seconds. Pour into a tiki mug.
+
+
+

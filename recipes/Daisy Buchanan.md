@@ -1,3 +1,9 @@
+---
+title: Daisy Buchanan
+flavor: []
+favorite: false
+available: true
+---
 # Daisy Buchanan
 
 ## Ingredients:
@@ -12,3 +18,6 @@
 3. Stir well until chilled.  
 4. Strain into a coupe glass.  
 5. Serve with no garnish.  
+
+
+

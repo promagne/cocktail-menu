@@ -1,3 +1,9 @@
+---
+title: Monteverde's apple kitchen
+flavor: []
+favorite: false
+available: true
+---
 # Monteverde's Apple Kickin' Cocktail
 
 ## Ingredients:
@@ -16,3 +22,6 @@ Glass:
 
 Garnish:
 - Apple slice
+
+
+

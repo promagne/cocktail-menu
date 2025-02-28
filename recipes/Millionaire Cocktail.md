@@ -1,3 +1,9 @@
+---
+title: Millionaire Cocktail
+flavor: []
+favorite: false
+available: true
+---
 # Millionaire Cocktail
 
 This rendition of the classic features a fruity medley of rum, apricot, and sloe gin.
@@ -21,3 +27,6 @@ Several cocktails bearing the Millionaire moniker have been in circulation since
 
 ## Instructions:
 Shake all of the ingredients with ice, then strain into a chilled glass and garnish.
+
+
+

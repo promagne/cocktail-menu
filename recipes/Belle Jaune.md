@@ -1,3 +1,9 @@
+---
+title: Belle Jaune
+flavor: []
+favorite: false
+available: true
+---
 # Belle Jaune
 
 A refreshing cocktail featuring gin, lemon, thyme syrup, and cucumber.
@@ -29,3 +35,6 @@ A refreshing cocktail featuring gin, lemon, thyme syrup, and cucumber.
 
 ## Notes:
 "Belle Jaune" means "Beautiful Yellow" in French, referring to the cocktail's yellow hue from the lemon juice and thyme syrup. This is a refreshing spring or summer cocktail with a nice balance of bright citrus, herbal notes, and the cooling effect of cucumber.
+
+
+

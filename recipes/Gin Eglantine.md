@@ -1,3 +1,9 @@
+---
+title: Gin Eglantine
+flavor: []
+favorite: false
+available: true
+---
 # Gin Eglantine
 
 ## Ingredients:
@@ -8,3 +14,6 @@
 - Dash Grapefruit
 
 ## Instructions:
+
+
+

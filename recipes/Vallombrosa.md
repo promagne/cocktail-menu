@@ -1,3 +1,9 @@
+---
+title: Vallombrosa
+flavor: []
+favorite: false
+available: true
+---
 # Vallombrosa
 
 Created by David Wondrich
@@ -12,3 +18,6 @@ Created by David Wondrich
 
 ## Directions:
 Add all of the ingredients to a mixing glass and fill with ice. Stir, and strain into a chilled cocktail glass. Twist a thin-cut swatch of orange peel over the top and discard.
+
+
+

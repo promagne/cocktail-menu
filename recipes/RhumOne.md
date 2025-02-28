@@ -1,3 +1,9 @@
+---
+title: RhumOne
+flavor: []
+favorite: false
+available: true
+---
 # Tropical Rum Cocktail
 
 ## Ingredients:
@@ -12,3 +18,6 @@
 ## Instructions:
 1. Shake 3 ice cube
 2. In a glass with crushed ice
+
+
+

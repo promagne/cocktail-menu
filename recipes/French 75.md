@@ -1,3 +1,9 @@
+---
+title: French 75
+flavor: []
+favorite: false
+available: true
+---
 # French 75
 
 ## Ingredients:
@@ -9,3 +15,6 @@
 
 ## Instructions:
 1. Shake with ice
+
+
+

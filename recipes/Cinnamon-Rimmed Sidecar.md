@@ -1,3 +1,9 @@
+---
+title: Cinnamon-Rimmed Sidecar
+flavor: []
+favorite: false
+available: true
+---
 # Cinnamon-Rimmed Sidecar  
 
 ## Ingredients
@@ -19,3 +25,6 @@ For the drink: Fill a cocktail shaker halfway with ice cubes. Add the Calvados, 
 - **1 teaspoon** superfine sugar
 - **1/4 teaspoon** freshly ground cinnamon
 - **Lemon wedge**
+
+
+

@@ -1,3 +1,9 @@
+---
+title: Mai thai (Variation)
+flavor: []
+favorite: false
+available: true
+---
 # Mai Tai 
 
 ## Ingredients:
@@ -14,3 +20,6 @@
 3. Shake well until chilled.  
 4. Strain into a glass filled with ice.  
 5.
+
+
+

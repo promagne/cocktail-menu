@@ -1,3 +1,9 @@
+---
+title: Strawberry Negroni
+flavor: [sweet, bitter]
+favorite: false
+available: true
+---
 # Strawberry Negroni
 
 ## Ingredients:
@@ -14,3 +20,6 @@
 ### Strawberry-Infused Campari
 #### Ingredients:
 - **1 cup** Chopped Strawberries(fresh or frozen)
+
+
+

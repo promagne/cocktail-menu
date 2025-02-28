@@ -1,3 +1,9 @@
+---
+title: Cobra Verde
+flavor: []
+favorite: false
+available: true
+---
 # Cobra Verde
 
 ## Ingredients:
@@ -11,3 +17,6 @@
 2. No garnish.
 
 This is an adaptation of the classic Diamondback cocktail. The combination of so many intense ingredients gives it, well, extra bite. —Thomas Waugh, 2009
+
+
+

@@ -1,3 +1,9 @@
+---
+title: Pillar
+flavor: []
+favorite: false
+available: true
+---
 # Pillar
 
 ## Ingredients:
@@ -13,3 +19,6 @@
 3. Stir well until chilled.  
 4. Strain into a frozen coupe glass.  
 5. Serve and enjoy!  
+
+
+

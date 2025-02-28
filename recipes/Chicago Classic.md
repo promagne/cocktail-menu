@@ -1,3 +1,9 @@
+---
+title: Chicago Classic
+flavor: []
+favorite: false
+available: true
+---
 # Chicago Classic
 
 ## Ingredients:
@@ -8,3 +14,6 @@
 
 ## Source:
 THE WALDORF ASTORIA BAR BOOK
+
+
+

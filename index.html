@@ -26,6 +26,30 @@
             <div class="tab-pane active" id="all">
                 <div class="search-container">
                     <input type="text" id="searchInput" placeholder="Search cocktails...">
+                    
+                    <div class="filter-container">
+                        <div class="filter-group">
+                            <label>Availability:</label>
+                            <select id="availabilityFilter">
+                                <option value="all">All</option>
+                                <option value="available">Available</option>
+                                <option value="unavailable">Unavailable</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>Favorites:</label>
+                            <select id="favoriteFilter">
+                                <option value="all">All</option>
+                                <option value="favorite">Favorites Only</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group flavor-filter">
+                            <label>Flavor Tags:</label>
+                            <div id="flavorTags" class="flavor-tags-container"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="cocktails-grid" id="cocktailsGrid"></div>
             </div>

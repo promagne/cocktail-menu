@@ -1,3 +1,9 @@
+---
+title: Tailspin
+flavor: [strong, herbal]
+favorite: false
+available: true
+---
 # Tailspin
 
 ## Ingredients:
@@ -8,3 +14,6 @@
 
 ## Instructions:
 1. Rinse a coupe with campari
+
+
+

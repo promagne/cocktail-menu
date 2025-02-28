@@ -1,3 +1,9 @@
+---
+title: Calva Apple
+flavor: []
+favorite: false
+available: true
+---
 # Calva Apple
   
 ## Ingredients:
@@ -9,3 +15,5 @@
 - Torch in a flamming glass
 - Add little pieces of green apple
 - Serve and enjoy!
+
+

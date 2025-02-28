@@ -1,3 +1,9 @@
+---
+title: Noname
+flavor: []
+favorite: false
+available: true
+---
 # Noname
 
 ## Ingredients:
@@ -9,3 +15,6 @@
 - Cerise Marashiano
 
 ## Instructions:
+
+
+

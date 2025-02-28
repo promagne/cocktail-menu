@@ -18,7 +18,7 @@ Generated on 02/27/2025 16:48:49
 - [[Rye Governor]]: Rye Governor.md
 - [[Strawberry Negroni]]: Strawberry Negroni.md
 - [[Tailspin]]: Tailspin.md
-- [[Untitled]]: Untitled.md
+- [[Leadership note]]: Untitled.md
 - [[Vallombrosa]]: Vallombrosa.md
 
 ## Gin (15 cocktails)
@@ -143,7 +143,7 @@ Generated on 02/27/2025 16:48:49
 
 - [[Madame Rouge]]: Madame Rouge.md
 - [[Monteverde's apple kitchen]]: Monteverde's apple kitchen.md
-- [[Untitled]]: Untitled.md
+- [[Leadership note]]: Untitled.md
 - [[Vallombrosa]]: Vallombrosa.md
 
 ## Champagne (4 cocktails)

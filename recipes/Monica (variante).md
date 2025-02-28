@@ -1,3 +1,9 @@
+---
+title: Monica (variante)
+flavor: []
+favorite: false
+available: true
+---
 # Monica Drink Variante
 
 ## Ingredients:
@@ -7,3 +13,6 @@
 - Prosecco
 
 ## Instructions:
+
+
+

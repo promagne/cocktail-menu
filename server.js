@@ -46,6 +46,58 @@ function cleanupDataFiles() {
     });
 }
 
+// Extract YAML frontmatter from markdown content
+function extractFrontmatter(content) {
+    // Normalize line endings
+    const normalizedContent = content.replace(/\r\n/g, '\n');
+    
+    // Match frontmatter section
+    const frontmatterRegex = /^---\s*\n([\s\S]*?)\n\s*---/;
+    const match = normalizedContent.match(frontmatterRegex);
+    
+    if (match && match[1]) {
+        const frontmatterLines = match[1].split('\n');
+        const frontmatter = {};
+        
+        frontmatterLines.forEach(line => {
+            line = line.trim();
+            if (!line) return; // Skip empty lines
+            
+            // Find the first colon to split key and value
+            const colonIndex = line.indexOf(':');
+            if (colonIndex === -1) return; // Skip if no colon found
+            
+            const key = line.substring(0, colonIndex).trim();
+            let value = line.substring(colonIndex + 1).trim();
+            
+            if (!key) return; // Skip if no key
+            
+            // Handle arrays in YAML (like flavor: [sweet, bitter])
+            if (value.startsWith('[') && value.endsWith(']')) {
+                // Extract array items
+                const arrayContent = value.substring(1, value.length - 1);
+                if (arrayContent.trim()) {
+                    // Split by comma and trim each item
+                    frontmatter[key] = arrayContent.split(',').map(item => item.trim());
+                } else {
+                    frontmatter[key] = []; // Empty array
+                }
+            } else if (value === 'true') {
+                frontmatter[key] = true;
+            } else if (value === 'false') {
+                frontmatter[key] = false;
+            } else {
+                frontmatter[key] = value;
+            }
+        });
+        
+        console.log(`Extracted frontmatter for file with flavor: ${JSON.stringify(frontmatter.flavor)}`);
+        return frontmatter;
+    }
+    
+    return {};
+}
+
 // Generate cocktail data
 function generateCocktailData() {
     const recipesDir = path.join(__dirname, 'recipes');
@@ -58,6 +110,9 @@ function generateCocktailData() {
     files.forEach(file => {
         const filePath = path.join(recipesDir, file);
         const content = fs.readFileSync(filePath, 'utf8');
+        
+        // Extract frontmatter
+        const frontmatter = extractFrontmatter(content);
         
         // Extract cocktail name (first heading)
         const nameMatch = content.match(/^# (.+)$/m);
@@ -73,7 +128,10 @@ function generateCocktailData() {
             name,
             path: `recipes/${file}`,
             alcoholTypes,
-            ingredients
+            ingredients,
+            flavor: frontmatter.flavor || [],
+            available: frontmatter.available !== undefined ? frontmatter.available : true,
+            favorite: frontmatter.favorite || false
         });
     });
     

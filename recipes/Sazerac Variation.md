@@ -1,3 +1,9 @@
+---
+title: Sazerac Variation
+flavor: []
+favorite: false
+available: true
+---
 # Sazerac Variation
 
 ## Ingredients:
@@ -20,3 +26,6 @@
 4. Strain into the prepared glass.
 
 5. Twist a slice of lemon peel over the surface to extract the oils and then discard.
+
+
+

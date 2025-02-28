@@ -1,3 +1,9 @@
+---
+title: La Dolce Vita
+flavor: []
+favorite: false
+available: true
+---
 # La Dolce Vita
 
 ## Ingredients:
@@ -7,3 +13,6 @@
 
 ## Instructions:
 Stir all the ingredients over ice, then strain into a double rocks glass over 1 large ice cube. No garnish.
+
+
+

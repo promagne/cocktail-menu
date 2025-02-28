@@ -1,3 +1,9 @@
+---
+title: Gin Tonic (variante)
+flavor: []
+favorite: false
+available: true
+---
 ## Ingredients:
 - **1.5 oz** Gin
 - **1 oz** Vodka Grapefruit
@@ -5,3 +11,6 @@
 - **200 ml** Tonic Water
 
 ## Instructions:
+
+
+

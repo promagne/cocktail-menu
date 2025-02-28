@@ -1,3 +1,9 @@
+---
+title: Miss Behavin
+flavor: []
+favorite: false
+available: true
+---
 # MISS BEHAVIN'
 
 ## Garnish:
@@ -12,3 +18,6 @@
 
 ## Additional Information:
 - Includes raspberry preserves and egg white
+
+
+
