@@ -416,9 +416,13 @@ body.dark-mode .cocktail-card .unavailable-indicator {
 .no-results {
     grid-column: 1 / -1;
     text-align: center;
-    padding: 24px;
-    color: var(--text-secondary);
-    font-style: italic;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
 }
 
 .no-tags {

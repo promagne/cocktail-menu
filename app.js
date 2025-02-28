@@ -56,17 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Fetch cocktails data
-    fetch('/api/cocktails')
-        .then(response => response.json())
-        .then(data => {
-            cocktails = data;
-            renderCocktails();
-            extractFlavorTags();
-            renderFlavorTags();
-        })
-        .catch(error => console.error('Error fetching cocktails:', error));
-
     // Render cocktails in the grid
     function renderCocktails() {
         cocktailsGrid.innerHTML = '';
@@ -257,15 +246,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize the application
     function init() {
         // Fetch cocktails data
-        fetch('/api/cocktails')
-            .then(response => response.json())
+        fetch('./api/cocktails')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 cocktails = data;
                 renderCocktails();
                 extractFlavorTags();
                 renderFlavorTags();
             })
-            .catch(error => console.error('Error fetching cocktails:', error));
+            .catch(error => {
+                console.error('Error fetching cocktails:', error);
+                cocktailsGrid.innerHTML = '<div class="no-results">Error loading cocktails. Please try again later.</div>';
+            });
         
         // Add event listeners for filters
         searchInput.addEventListener('input', renderCocktails);

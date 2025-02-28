@@ -131,7 +131,8 @@ function generateCocktailData() {
             ingredients,
             flavor: frontmatter.flavor || [],
             available: frontmatter.available !== undefined ? frontmatter.available : true,
-            favorite: frontmatter.favorite || false
+            favorite: frontmatter.favorite || false,
+            alcohol: frontmatter.alcohol || []
         });
     });
     
