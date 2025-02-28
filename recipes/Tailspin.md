@@ -1,6 +1,6 @@
 ---
 title: Tailspin
-flavor: [powerfull, herbal]
+flavor: [strong, herbal]
 favorite: false
 available: true
 alcohol: [Gin, Chartreuse]
