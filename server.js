@@ -4,10 +4,29 @@ const path = require('path');
 const marked = require('marked');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Serve static files
 app.use(express.static(__dirname));
+
+// Function to clean up existing data files
+function cleanupDataFiles() {
+    const dataFiles = [
+        path.join(__dirname, 'recipes-data.json'),
+        path.join(__dirname, 'categories-data.json')
+    ];
+    
+    dataFiles.forEach(file => {
+        if (fs.existsSync(file)) {
+            try {
+                fs.unlinkSync(file);
+                console.log(`Deleted existing data file: ${file}`);
+            } catch (error) {
+                console.error(`Error deleting ${file}:`, error);
+            }
+        }
+    });
+}
 
 // Generate cocktail data
 function generateCocktailData() {
@@ -202,6 +221,7 @@ function generateCategoryData() {
 // Generate data files on server start
 app.get('/generate-data', (req, res) => {
     try {
+        cleanupDataFiles();
         const cocktails = generateCocktailData();
         const categories = generateCategoryData();
         res.json({
@@ -227,6 +247,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
     console.log('Generating data files...');
+    cleanupDataFiles();
     generateCocktailData();
     generateCategoryData();
     console.log('Data files generated!');
