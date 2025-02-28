@@ -1,11 +1,11 @@
 # Monteverde's Apple Kickin' Cocktail
 
 ## Ingredients:
-- **1½ oz** Japanese whisky (Monteverde uses Suntory Toki)
-- **¼ oz** Calvados or apple brandy
+- **1½ oz** Japanese Whisky(Monteverde uses Suntory Toki)
+- **¼ oz** Calvados Or Apple Brandy
 - **¼ oz** Amaro Sibilla
-- **¼ oz** Demerara syrup (1:1)
-- **1 dash** Angostura bitters
+- **¼ oz** Demerara Syrup(1:1)
+- **1 Dash** Angostura bitters
 
 ## Instructions:
 Combine all of the ingredients in a rocks glass 

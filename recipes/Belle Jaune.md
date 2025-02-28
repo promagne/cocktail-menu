@@ -3,10 +3,10 @@
 A refreshing cocktail featuring gin, lemon, thyme syrup, and cucumber.
 
 ## Ingredients:
-- **2 oz** Gin (preferably London Dry style)
-- **3/4 oz** Fresh lemon juice
-- **1/2 oz** Thyme syrup
-- **3-4** Thin slices of cucumber (about 1-2 inches of cucumber)
+- **2 oz** Gin(preferably London Dry style)
+- **3/4 oz** Fresh Lemon Juice
+- **1/2 oz** Thyme Syrup
+- **3-4** Thin Slices Of Cucumber(about 1-2 inches of cucumber)
 - **Garnish:** Thyme sprig and/or cucumber slice
 
 ## For the thyme syrup:

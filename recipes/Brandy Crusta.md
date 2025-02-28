@@ -1,12 +1,12 @@
 # BRANDY CRUSTA
 
 ## Ingredients:
-- **2 oz** Kelt VSOP cognac
+- **2 oz** Kelt VSOP Cognac
 - **½ oz** Cointreau
 - **¼ oz** House-made Demerara Syrup
-- **¼ oz** Fresh lemon juice
-- **1 dash** Angostura bitters
-- **1 dash** Peychaud's bitters
+- **¼ oz** Fresh Lemon Juice
+- **1 Dash** Angostura bitters
+- **1 Dash** Peychaud's bitters
 
 ## Instructions:
 Prior to building this cocktail, moisten rim of small goblet or wineglass with lemon wedge (about ½ inch down), then carefully dab and roll in superfine sugar on a small plate.

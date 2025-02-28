@@ -2,8 +2,8 @@
 
 ## Ingredients:
 - **2.5 oz** Gin
-- **3/4 oz** Dry vermouth
-- Olive oil 
+- **3/4 oz** Dry Vermouth
+- Olive Oil
 
 ## Instructions:
 1. Stir assez longtemps genre 30 secondes avec verre plein de glaçons

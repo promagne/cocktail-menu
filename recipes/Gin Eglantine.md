@@ -1,10 +1,10 @@
 # Gin Eglantine
 
 ## Ingredients:
-- **1.5 oz** Gin botanist
-- **1 oz** St germain
+- **1.5 oz** Gin Botanist
+- **1 oz** St Germain
 - **0.5 oz** Eglantine
 - **1**
-- Dash grapefruit
+- Dash Grapefruit
 
 ## Instructions:

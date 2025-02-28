@@ -1,10 +1,10 @@
 # Larceny and Old Lace
 
 ## Ingredients:
-- **1½ oz** Larceny bourbon
-- **¾ oz** Carpano Antica sweet vermouth
-- **¾ oz** Cynar liqueur
-- **1 dash** Regans' Orange Bitters No. 6
+- **1½ oz** Larceny Bourbon
+- **¾ oz** Carpano Antica Sweet Vermouth
+- **¾ oz** Cynar Liqueur
+- **1 Dash** Regans' Orange Bitters No. 6
 
 ## Instructions:
 1. Add all ingredients to mixing glass. Add ice and stir for 30 seconds.

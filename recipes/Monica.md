@@ -3,7 +3,7 @@
 ## Ingredients:
 - **1.5 oz** Gin
 - **1 oz** St-Germain
-- **0.5** Lemon juice
+- **0.5** Lemon Juice
 - Prosecco
 
 ## Instructions:

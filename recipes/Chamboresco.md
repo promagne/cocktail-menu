@@ -3,7 +3,7 @@
 ## Ingredients:
 - **2 oz** Bourbon
 - **3/4 oz** Chambord
-- **1/2 oz** Vanilla syrup
+- **1/2 oz** Vanilla Syrup
 
 ## Instructions:
 1. Shake with ice

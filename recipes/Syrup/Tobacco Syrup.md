@@ -1,7 +1,7 @@
 # Tobacco Syrup
 
 ## Ingredients:
-- **1.5 cup** Of Havana 7years rum
+- **1.5 cup** Of Havana7years rum
 - **1 cup** Of Turbinado sugar
 
 ## Instructions:

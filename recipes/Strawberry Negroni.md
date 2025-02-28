@@ -3,7 +3,7 @@
 ## Ingredients:
 - **1 oz** Gin
 - **1 oz** Strawberry-infused Campari*
-- **1 oz** Sweet vermouth
+- **1 oz** Sweet Vermouth
 
 ## Instructions:
 1. Combine all ingredients in a mixing glass and fill it 3/4 with ice.
@@ -13,4 +13,4 @@
 ## Notes:
 ### Strawberry-Infused Campari
 #### Ingredients:
-- **1 cup** chopped strawberries (fresh or frozen)
+- **1 cup** Chopped Strawberries(fresh or frozen)

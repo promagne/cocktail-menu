@@ -1,11 +1,11 @@
 # Jamaican Mule
 
 ## Ingredients:
-- **2 ounces** Aged Jamaican rum (preferably Appleton Estate V/X)
-- **1 ounce** Ginger syrup (page 156)
-- **¼ ounce** Lime juice
-- **½ ounce** Pineapple juice
-- **2 dashes** Angostura bitters
+- **2 Ounces** Aged Jamaican Rum(preferably Appleton Estate V/X)
+- **1 Ounce** Ginger Syrup(page 156)
+- **¼ Ounce** Lime juice
+- **½ Ounce** Pineapple juice
+- **2 Dashes** Angostura bitters
 
 ## Instructions:
 1. Combine all the ingredients in a cocktail shaker.

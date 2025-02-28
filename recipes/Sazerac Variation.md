@@ -1,12 +1,12 @@
 # Sazerac Variation
 
 ## Ingredients:
-- **Absinthe**, to rinse
-- **1 Sugar cube**
+- **absinthe**, To Rinse
+- **1 Sugar Cube**
 - **1/2 tsp** Cold water
-- **3 dashes** Peychaud's bitters
-- **2 dashes** Angostura bitters
-- **1 1/4 oz** Rye whiskey
+- **3 Dashes** Peychaud's bitters
+- **2 Dashes** Angostura bitters
+- **1 1/4 oz** Rye Whiskey
 - **1 1/4 oz** Cognac
 - **Garnish:** Lemon peel
 

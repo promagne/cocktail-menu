@@ -2,10 +2,10 @@
 
 ## Ingredients:
 - **1.5 oz** Gin
-- **3/4 oz** St germain
-- **1 oz** Blueberry syrup
+- **3/4 oz** St Germain
+- **1 oz** Blueberry Syrup
 - **1/5 oz** Lemon
-- Complete with prosecco in a coupe
+- Complete With Prosecco In A Coupe
 
 ## Instructions:
 1. Shake with ice

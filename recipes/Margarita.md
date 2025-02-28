@@ -1,11 +1,11 @@
 # Margarita
 
 ## Ingredients:
-- Kosher salt
-- **2 ounces** Siembra Azul Blanco Tequila
-- **3/4 ounce** Cointreau
-- **1 ounce** Lime juice
-- **1/4 ounce** Agave nectar
+- Kosher Salt
+- **2 Ounces** Siembra Azul Blanco Tequila
+- **3/4 Ounce** Cointreau
+- **1 Ounce** Lime juice
+- **1/4 Ounce** Agave nectar
 - Garnish: 1 lime wedge
 
 ## Instructions:

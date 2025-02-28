@@ -1,13 +1,13 @@
 # Bourbon Amaro Campari Cocktail
 
 ## Ingredients:
-- **1 1/2 oz** Bourbon
+- **1.5 oz** Bourbon
 - **1 oz** Amaro
 - **1/2 oz** Campari
-- **1/2 oz** Fresh lemon juice
-- **1/2 oz** Simple syrup
+- **1/2 oz** Fresh Lemon Juice
+- **1/2 oz** Simple Syrup
 - Ice
-- Lemon twist or cherry for garnish (optional)
+- Lemon Twist Or Cherry for garnish(optional)
 
 ## Instructions:
 1. In a mixing glass, combine the bourbon, amaro, Campari, fresh lemon juice, and simple syrup.

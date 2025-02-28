@@ -1,11 +1,11 @@
 # Cosmopolitain
 
 ## Ingredients:
-- **2 oz** Vodka grey goose
-- **1 oz** Vodka grapefruit
+- **2 oz** Vodka Grey Goose
+- **1 oz** Vodka Grapefruit
 - **2 oz** Cointreau
-- **1 oz** Lime juice
-- **1.5 oz** Cranberry juice
+- **1 oz** Lime Juice
+- **1.5 oz** Cranberry Juice
 
 ## Instructions:
 1. Pour un verre haut.

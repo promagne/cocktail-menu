@@ -1,11 +1,11 @@
-# CHAMPS-ÉLYSÉES
+# Champs-Élysees
 
 ## Ingredients:
-- **2 ounces** PIERRE FERRAND AMBRE COGNAC
-- **½ ounce** GREEN CHARTREUSE
-- **¾ ounce** LEMON JUICE
-- **½ ounce** CANE SUGAR SYRUP (PAGE 276)
-- **1 dash** ANGOSTURA BITTERS
+- **2 oz** Cognac
+- **½ oz** Green Chartreuse
+- **¾ oz** Lemon Juice
+- **½ oz** Cane Sugar Syrup
+- **1 Dash** Angostura Bitters
 
 ## Instructions:
 Shake all the ingredients with ice, then strain into a coupe. Garnish with the lemon twist.

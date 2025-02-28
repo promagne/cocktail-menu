@@ -3,10 +3,10 @@
 Created by David Wondrich
 
 ## Ingredients:
-- **1.5 oz** Good blended Scotch whisky, such as Johnnie Walker Black or Dewar's 12
-- **1 oz** Italian bianco-style vermouth
-- **.5 oz** Strega or yellow Chartreuse
-- **2 dashes** Peychaud's bitters
+- **1.5 oz** Good Blended Scotch Whisky, such as Johnnie Walker Black or Dewar's 12
+- **1 oz** Italian Bianco-style vermouth
+- **.5 oz** Strega Or Yellow Chartreuse
+- **2 Dashes** Peychaud's bitters
 - **Glass:** Cocktail
 - **Garnish:** Orange peel
 

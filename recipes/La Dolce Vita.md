@@ -1,7 +1,7 @@
 # La Dolce Vita
 
 ## Ingredients:
-- **2 oz** Chamomile-infused Old Overholt Rye (page 281)
+- **2 oz** Chamomile-infused Old Overholt Rye(page 281)
 - **¾ oz** Campari
 - **½ oz** St-Germain
 

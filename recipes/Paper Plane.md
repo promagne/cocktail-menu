@@ -6,7 +6,7 @@
 - **0.75 oz** Bourbon
 - **0.75 oz** Aperol
 - **0.75 oz** Amaro Nonino
-- **0.75 oz** Lemon juice
+- **0.75 oz** Lemon Juice
 
 ## Instructions:
 1. Add all ingredients to a shaker with ice.

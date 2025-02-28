@@ -1,7 +1,7 @@
 ## Ingredients:
 
 - **2 oz** Bourbon
-- **0.5 oz** Lime juice
-- **0.5 oz** Maple syrup
-- Ginger beer
+- **0.5 oz** Lime Juice
+- **0.5 oz** Maple Syrup
+- Ginger Beer
 

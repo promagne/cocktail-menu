@@ -1,11 +1,11 @@
 # Pillar
 
 ## Ingredients:
-- **1.5 oz** Gin  
-- **1 oz** Sweet Vermouth  
-- **0.75 oz** Calvados  
-- **0.25 oz** Green Chartreuse  
-- **1 dash** Peychaud’s Bitters  
+- **1.5 oz** Gin
+- **1 oz** Sweet Vermouth
+- **0.75 oz** Calvados
+- **0.25 oz** Green Chartreuse
+- **1 Dash** Peychaud’s Bitters  
 
 ## Instructions:
 1. Fill a mixing glass with ice.  

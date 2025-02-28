@@ -1,10 +1,10 @@
 # Manhattan
 
 ## Ingredients:
-- **2 ounces** Bourbon or rye
-- **1 ounce** Sweet vermouth
-- **2 dashes** Angostura bitters
-- **1 dash** Orange bitters
+- **2 Ounces** Bourbon or rye
+- **1 Ounce** Sweet vermouth
+- **2 Dashes** Angostura bitters
+- **1 Dash** Orange bitters
 - Garnish: brandied cherry
 
 ## Instructions:

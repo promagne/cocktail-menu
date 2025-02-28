@@ -1,14 +1,14 @@
 # MISS BEHAVIN'
 
 ## Garnish:
-1 PEAR SLICE
+1 Pear Slice
 
 ## Ingredients:
-- **¾ oz** LEMON JUICE
-- **¾ oz** LAIRD'S STRAIGHT APPLE BRANDY BOTTLED IN BOND
-- **¾ oz** PEAR EAU DE VIE
-- **1 oz** SIMPLE SYRUP
-- **CHAMPAGNE, TO TOP**
+- **¾ oz** Lemon Juice
+- **¾ oz** Laird'S STRAIGHT APPLE BRANDY BOTTLED IN BOND
+- **¾ oz** Pear Eau De Vie
+- **1 oz** Simple Syrup
+- **champagne, To Top**
 
 ## Additional Information:
 - Includes raspberry preserves and egg white

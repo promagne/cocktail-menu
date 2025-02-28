@@ -1,10 +1,10 @@
 # Cobra Verde
 
 ## Ingredients:
-- **1½ ounces** Neisson Rhum Agricole Blanc
-- **1 ounce** Chamomile-infused Old Overholt Rye (page 285)
-- **½ ounce** Yellow Chartreuse
-- **½ ounce** Green Chartreuse
+- **1½ Ounces** Neisson Rhum Agricole Blanc
+- **1 Ounce** Chamomile-infused Old Overholt Rye(page 285)
+- **½ Ounce** Yellow Chartreuse
+- **½ Ounce** Green Chartreuse
 
 ## Instructions:
 1. Stir all the ingredients over ice, then strain into a coupe.

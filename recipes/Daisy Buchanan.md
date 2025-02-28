@@ -2,9 +2,9 @@
 
 ## Ingredients:
 - **2 oz** Chamomile-Infused Old Rye
-- **0.5 oz** Dolin Dry Vermouth  
-- **0.5 oz** Aperol  
-- **0.25 oz** Yellow Chartreuse  
+- **0.5 oz** Dolin Dry Vermouth
+- **0.5 oz** Aperol
+- **0.25 oz** Yellow Chartreuse
 
 ## Instructions:
 1. Fill a mixing glass with ice.  

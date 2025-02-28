@@ -2,8 +2,8 @@
 
 ## Ingredients:
 - **1 oz** Cointreau
-- **3 oz** Jus de peche
-- **4** Ice cube
+- **3 oz** Jus De Peche
+- **4** Ice Cube
 
 ## Instructions:
 1. Top with prosecco
