@@ -1,6 +1,6 @@
 ---
 title: Calva Apple
-flavor: []
+flavor: [strong, sweet]
 favorite: false
 available: true
 alcohol: [Calvados, Vermouth]
@@ -8,9 +8,9 @@ alcohol: [Calvados, Vermouth]
 # Calva Apple
   
 ## Ingredients:
-1. **1.5oz** Calva
-2. **0.5oz** Sweet vermouth
-3. **0.5oz** Symple syrup
+- **1.5oz** Calva
+- **0.5oz** Sweet vermouth
+- **0.5oz** Symple syrup
 
 ## Instructions:
 1. Torch in a flamming glass
