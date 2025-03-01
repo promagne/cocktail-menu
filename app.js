@@ -337,11 +337,27 @@ document.addEventListener('DOMContentLoaded', function() {
             // Set initial button text based on collapsed state
             toggleButton.textContent = filterGroup.classList.contains('collapsed') ? '▶' : '▼';
             
-            toggleButton.addEventListener('click', function() {
-                filterGroup.classList.toggle('collapsed');
-                this.textContent = filterGroup.classList.contains('collapsed') ? '▶' : '▼';
+            // Make the toggle button clickable
+            toggleButton.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent triggering the header click
+                toggleFilterGroup(filterGroup, toggleButton);
             });
+            
+            // Make the entire header clickable
+            const groupHeader = filterGroup.querySelector('.group-header');
+            if (groupHeader) {
+                groupHeader.style.cursor = 'pointer';
+                groupHeader.addEventListener('click', function() {
+                    toggleFilterGroup(filterGroup, toggleButton);
+                });
+            }
         }
+    }
+    
+    // Helper function to toggle filter group state
+    function toggleFilterGroup(filterGroup, toggleButton) {
+        filterGroup.classList.toggle('collapsed');
+        toggleButton.textContent = filterGroup.classList.contains('collapsed') ? '▶' : '▼';
     }
 
     // Initialize the application
