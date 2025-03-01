@@ -1,7 +1,7 @@
 ---
 title: Mai thai (Variation)
 flavor: []
-favorite: false
+favorite: true
 available: true
 alcohol: [Rum, Cointreau]
 ---

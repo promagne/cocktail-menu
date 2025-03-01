@@ -1,7 +1,7 @@
 ---
 title: Martini
 flavor: []
-favorite: false
+favorite: true
 available: true
 alcohol: [Gin, Dry Vermouth]
 ---

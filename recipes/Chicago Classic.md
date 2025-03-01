@@ -1,7 +1,7 @@
 ---
 title: Chicago Classic
 flavor: []
-favorite: false
+favorite: true
 available: true
 alcohol: [Cognac, Cointreau, Prosecco]
 ---

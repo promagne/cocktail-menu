@@ -1,7 +1,7 @@
 ---
 title: Sazerac
 flavor: []
-favorite: false
+favorite: true
 available: true
 alcohol: [Rye, Absinthe]
 ---

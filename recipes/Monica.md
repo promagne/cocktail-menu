@@ -1,7 +1,7 @@
 ---
 title: Monica
 flavor: []
-favorite: false
+favorite: true
 available: true
 alcohol: [Gin, St-Germain, Prosecco]
 ---

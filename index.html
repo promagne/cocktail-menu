@@ -10,14 +10,14 @@
 <body>
     <div class="container" id="mainContainer">
         <div class="header-controls">
-            <button class="theme-toggle" id="themeToggle">Switch to Light Mode</button>
+            <button class="button button--secondary theme-toggle" id="themeToggle">Switch to Light Mode</button>
             <h1>Cocktail Menu</h1>
         </div>
 
         <div class="main-content">
-            <div class="search-container">
-                <div class="search-input-wrapper">
-                    <input type="text" id="searchInput" placeholder="Search for cocktails by name...">
+            <div class="search search-container">
+                <div class="search__wrapper search-input-wrapper">
+                    <input type="text" id="searchInput" class="search__input" placeholder="Search for cocktails by name...">
                 </div>
                 
                 <div class="filter-container">
@@ -38,14 +38,14 @@
                         </select>
                     </div>
                     
-                    <div class="filter-group flavor-filter">
+                    <div class="filter-group filter-group--flavor">
                         <label>Flavor Tags:</label>
-                        <div id="flavorTags" class="flavor-tags-container"></div>
+                        <div id="flavorTags" class="filter-tags"></div>
                     </div>
                     
-                    <div class="filter-group alcohol-filter">
+                    <div class="filter-group filter-group--alcohol">
                         <label>Alcohol Types:</label>
-                        <div id="alcoholTags" class="alcohol-tags-container"></div>
+                        <div id="alcoholTags" class="filter-tags"></div>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
         <!-- Cocktail Detail Modal -->
         <div id="cocktailModal" class="modal">
             <div class="modal-content">
-                <span class="close-modal">&times;</span>
+                <span class="modal__close close-modal">&times;</span>
                 <div id="cocktailDetail"></div>
             </div>
         </div>

@@ -1,14 +1,14 @@
 ---
 title: La Dolce Vita
 flavor: []
-favorite: false
+favorite: true
 available: true
 alcohol: [Rye, Campari, st-Germain]
 ---
 # La Dolce Vita
 
 ## Ingredients:
-- **2 oz** Chamomile-infused Old Overholt Rye(page 281)
+- **2 oz** Chamomile-infused Old Overholt Rye
 - **¾ oz** Campari
 - **½ oz** St-Germain
 

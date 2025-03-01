@@ -125,8 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
         let flavorTags = '';
         if (cocktail.flavor && cocktail.flavor.length > 0) {
             flavorTags = `
-                <div class="card-flavor-tags">
-                    ${cocktail.flavor.map(flavor => `<span class="card-flavor-tag">${flavor}</span>`).join('')}
+                <div class="card-tag-list">
+                    ${cocktail.flavor.map(flavor => `<span class="card-tag card-tag--flavor">${flavor}</span>`).join('')}
                 </div>
             `;
         }
@@ -181,8 +181,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 let flavorTags = '';
                 if (cocktail.flavor && cocktail.flavor.length > 0) {
                     flavorTags = `
-                        <div class="detail-flavor-tags">
-                            ${cocktail.flavor.map(flavor => `<span class="detail-flavor-tag">${flavor}</span>`).join('')}
+                        <div class="detail-tags">
+                            ${cocktail.flavor.map(flavor => `<span class="detail-tag detail-tag--flavor">${flavor}</span>`).join('')}
                         </div>
                     `;
                 }
@@ -191,8 +191,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 let alcoholTags = '';
                 if (cocktail.alcohol && cocktail.alcohol.length > 0) {
                     alcoholTags = `
-                        <div class="detail-alcohol-tags">
-                            ${cocktail.alcohol.map(alcohol => `<span class="detail-alcohol-tag">${alcohol}</span>`).join('')}
+                        <div class="detail-tags">
+                            ${cocktail.alcohol.map(alcohol => `<span class="detail-tag detail-tag--alcohol">${alcohol}</span>`).join('')}
                         </div>
                     `;
                 }
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         allFlavorTags.forEach(tag => {
             const tagEl = document.createElement('div');
-            tagEl.className = 'tag';
+            tagEl.className = 'filter-tag filter-tag--flavor';
             tagEl.textContent = tag;
             
             if (activeFlavorTags.includes(tag)) {
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         allAlcoholTags.forEach(tag => {
             const tagEl = document.createElement('div');
-            tagEl.className = 'tag';
+            tagEl.className = 'filter-tag filter-tag--alcohol';
             tagEl.textContent = tag;
             
             if (activeAlcoholTags.includes(tag)) {

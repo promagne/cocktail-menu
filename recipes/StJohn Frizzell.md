@@ -3,7 +3,7 @@ title: StJohn Frizzell
 flavor: []
 favorite: false
 available: true
-alcohol: [CGin]
+alcohol: [Gin]
 ---
 # St. John Frizzell Fort Defiance Brooklyn
 
