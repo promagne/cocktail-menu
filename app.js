@@ -351,14 +351,27 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Alcohol toggle
-        const toggleAlcohol = document.getElementById('toggleAlcohol');
-        const alcoholGroup = document.querySelector('.filter-group--alcohol');
+        // Set up toggle functionality for all filter groups
+        setupFilterToggle('toggleAvailability', '.filter-group--availability');
+        setupFilterToggle('toggleFavorites', '.filter-group--favorite');
+        setupFilterToggle('toggleFlavor', '.filter-group--flavor');
+        setupFilterToggle('toggleAlcohol', '.filter-group--alcohol');
+    }
+    
+    // Helper function to set up filter toggle
+    function setupFilterToggle(buttonId, groupSelector) {
+        const toggleButton = document.getElementById(buttonId);
+        const filterGroup = document.querySelector(groupSelector);
         
-        toggleAlcohol.addEventListener('click', function() {
-            alcoholGroup.classList.toggle('collapsed');
-            this.textContent = alcoholGroup.classList.contains('collapsed') ? '▶' : '▼';
-        });
+        if (toggleButton && filterGroup) {
+            // Set initial button text based on collapsed state
+            toggleButton.textContent = filterGroup.classList.contains('collapsed') ? '▶' : '▼';
+            
+            toggleButton.addEventListener('click', function() {
+                filterGroup.classList.toggle('collapsed');
+                this.textContent = filterGroup.classList.contains('collapsed') ? '▶' : '▼';
+            });
+        }
     }
 
     // Initialize the application

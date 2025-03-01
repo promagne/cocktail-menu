@@ -21,9 +21,10 @@
                 </div>
                 
                 <div class="filter-container">
-                    <div class="filter-group filter-group--availability">
+                    <div class="filter-group filter-group--availability collapsed">
                         <div class="group-header">
                             <label>Availability:</label>
+                            <button class="toggle-button" id="toggleAvailability">▶</button>
                         </div>
                         <div id="availabilityTags" class="filter-tags">
                             <div class="filter-tag filter-tag--availability active" data-value="all">All</div>
@@ -32,9 +33,10 @@
                         </div>
                     </div>
                     
-                    <div class="filter-group filter-group--favorite">
+                    <div class="filter-group filter-group--favorite collapsed">
                         <div class="group-header">
                             <label>Favorites:</label>
+                            <button class="toggle-button" id="toggleFavorites">▶</button>
                         </div>
                         <div id="favoriteTags" class="filter-tags">
                             <div class="filter-tag filter-tag--favorite active" data-value="all">All</div>
@@ -42,9 +44,10 @@
                         </div>
                     </div>
                     
-                    <div class="filter-group filter-group--flavor">
+                    <div class="filter-group filter-group--flavor collapsed">
                         <div class="group-header">
                             <label>Flavor Tags:</label>
+                            <button class="toggle-button" id="toggleFlavor">▶</button>
                         </div>
                         <div id="flavorTags" class="filter-tags"></div>
                     </div>
