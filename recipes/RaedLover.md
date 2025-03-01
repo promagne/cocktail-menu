@@ -1,13 +1,11 @@
 ---
 title: RaedLover
-flavor: []
+flavor: [fruity, sweet]
 favorite: false
 available: true
 alcohol: [Rum, Cointreau, Soho]
 ---
 # RaedLover
-
-  
 
 ## Ingredients:
 
@@ -18,19 +16,10 @@ alcohol: [Rum, Cointreau, Soho]
 - 0.5oz Lime
 - 1oz Cointreau
 - Check In A Shaker
-
   
-
 ## Instructions:
 
 1. Fill a shaker with ice
-
 2. Add all the ingredients
-
 3. Shake well
-
 4. Strain into a cocktail glass
-
-
-
-
