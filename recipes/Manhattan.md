@@ -1,9 +1,9 @@
 ---
 title: Manhattan
-flavor: []
+flavor: [strong, sweet]
 favorite: false
 available: true
-alcohol: [Bourbon, Vermouth]
+alcohol: [Bourbon, Rye, Vermouth]
 ---
 # Manhattan
 

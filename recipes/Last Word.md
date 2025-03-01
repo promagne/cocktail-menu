@@ -1,6 +1,6 @@
 ---
 title: Last Word
-flavor: []
+flavor: [boozy, strong]
 favorite: false
 available: true
 alcohol: [Gin, Chartreuse]

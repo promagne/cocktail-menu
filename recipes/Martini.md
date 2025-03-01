@@ -13,9 +13,8 @@ alcohol: [Gin, Dry Vermouth]
 - Olive Oil
 
 ## Instructions:
-1. Stir assez longtemps genre 30 secondes avec verre plein de glaçons
-2. T'auras la solution parfaite
-
-
+1. Stir well 30seconds.
+2. Strain into a coupe glass.
+3. Garnish with an olive.
 
 

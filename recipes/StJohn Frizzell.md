@@ -1,5 +1,5 @@
 ---
-title: StJohn Frizzell
+title: St John Frizzell
 flavor: []
 favorite: false
 available: true

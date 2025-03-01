@@ -3,8 +3,7 @@ title: Punch Sevoz
 flavor: Sweet
 favorite: true
 available: true
-alcohol:
-  - Rum
+alcohol: [Rum]
 ---
 # Punch Sevoz
 ## Description

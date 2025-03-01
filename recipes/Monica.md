@@ -1,6 +1,6 @@
 ---
 title: Monica
-flavor: []
+flavor: [citrusy]
 favorite: true
 available: true
 alcohol: [Gin, St-Germain, Prosecco]

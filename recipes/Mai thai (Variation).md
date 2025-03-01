@@ -1,6 +1,6 @@
 ---
 title: Mai thai (Variation)
-flavor: []
+flavor: [sweet, tropical, fruity]
 favorite: true
 available: true
 alcohol: [Rum, Cointreau]

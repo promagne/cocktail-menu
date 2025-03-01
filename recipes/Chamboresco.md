@@ -17,8 +17,6 @@ alcohol: [Bourbon, Chambord]
 2. Pour in a coupe
 3. Top with prosecco
 
-(Try with 2 dashes of Peychaud)
-
 
 
 
