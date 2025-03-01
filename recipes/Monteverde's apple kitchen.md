@@ -3,7 +3,7 @@ title: Monteverde's apple kitchen
 flavor: []
 favorite: false
 available: true
-alcohol: [Whisky, Calvados, Amaro]
+alcohol: [Scotch, Calvados, Amaro]
 ---
 # Monteverde's Apple Kickin' Cocktail
 

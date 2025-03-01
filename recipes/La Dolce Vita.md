@@ -3,7 +3,7 @@ title: La Dolce Vita
 flavor: []
 favorite: true
 available: true
-alcohol: [Rye, Campari, st-Germain]
+alcohol: [Rye, Campari, St-Germain]
 ---
 # La Dolce Vita
 

@@ -3,7 +3,7 @@ title: Rhumination
 flavor: []
 favorite: false
 available: true
-alcohol: [Bourbon, Rhum, St-Germain]
+alcohol: [Bourbon, Rum, St-Germain]
 ---
 # Rhumination
 

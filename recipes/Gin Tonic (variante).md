@@ -3,7 +3,7 @@ title: Gin Tonic (variante)
 flavor: []
 favorite: false
 available: true
-alcohol: [Gin, Vodka Grapefruit]
+alcohol: [Gin, Vodka]
 ---
 ## Ingredients:
 - **1.5 oz** Gin
