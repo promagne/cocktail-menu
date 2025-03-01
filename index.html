@@ -21,30 +21,39 @@
                 </div>
                 
                 <div class="filter-container">
-                    <div class="filter-group">
-                        <label>Availability:</label>
-                        <select id="availabilityFilter">
-                            <option value="all">All</option>
-                            <option value="available">Available</option>
-                            <option value="unavailable">Unavailable</option>
-                        </select>
+                    <div class="filter-group filter-group--availability">
+                        <div class="group-header">
+                            <label>Availability:</label>
+                        </div>
+                        <div id="availabilityTags" class="filter-tags">
+                            <div class="filter-tag filter-tag--availability active" data-value="all">All</div>
+                            <div class="filter-tag filter-tag--availability" data-value="available">Available</div>
+                            <div class="filter-tag filter-tag--availability" data-value="unavailable">Unavailable</div>
+                        </div>
                     </div>
                     
-                    <div class="filter-group">
-                        <label>Favorites:</label>
-                        <select id="favoriteFilter">
-                            <option value="all">All</option>
-                            <option value="favorite">Favorites Only</option>
-                        </select>
+                    <div class="filter-group filter-group--favorite">
+                        <div class="group-header">
+                            <label>Favorites:</label>
+                        </div>
+                        <div id="favoriteTags" class="filter-tags">
+                            <div class="filter-tag filter-tag--favorite active" data-value="all">All</div>
+                            <div class="filter-tag filter-tag--favorite" data-value="favorite">Favorites Only</div>
+                        </div>
                     </div>
                     
                     <div class="filter-group filter-group--flavor">
-                        <label>Flavor Tags:</label>
+                        <div class="group-header">
+                            <label>Flavor Tags:</label>
+                        </div>
                         <div id="flavorTags" class="filter-tags"></div>
                     </div>
                     
-                    <div class="filter-group filter-group--alcohol">
-                        <label>Alcohol Types:</label>
+                    <div class="filter-group filter-group--alcohol collapsed">
+                        <div class="group-header">
+                            <label>Alcohol Types:</label>
+                            <button class="toggle-button" id="toggleAlcohol">▶</button>
+                        </div>
                         <div id="alcoholTags" class="filter-tags"></div>
                     </div>
                 </div>

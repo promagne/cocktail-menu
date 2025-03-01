@@ -28,6 +28,8 @@
     --tag-active-text: #fff;
     --alcohol-tag-bg: #5a3e36;
     --alcohol-tag-text: #ffffff;
+    --flavor-tag-bg: #e5e5e5;
+    --flavor-tag-text: #333;
 }
 
 body {
@@ -56,6 +58,8 @@ body.dark-mode {
     --tag-active-text: #fff;
     --alcohol-tag-bg: #6b4f47;
     --alcohol-tag-text: #ffffff;
+    --flavor-tag-bg: #333;
+    --flavor-tag-text: #ddd;
 }
 
 /* Main Layout */
@@ -209,24 +213,104 @@ body.dark-mode .search__input {
 .filter-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px;
+    margin-top: 16px;
+    align-items: flex-start;
     margin-bottom: 16px;
-    padding: 12px;
-    background-color: var(--card-bg);
-    border-radius: 4px;
-    border: 1px solid var(--border-color);
+    padding: 0;
 }
 
+/* Filter Groups */
 .filter-group {
+    margin-top: 0;
     display: flex;
     align-items: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.03);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.filter-group--availability {
+    background-color: rgba(76, 175, 80, 0.08);
+    border-left: 3px solid var(--success-color);
+}
+
+.filter-group--favorite {
+    background-color: rgba(255, 193, 7, 0.08);
+    border-left: 3px solid #FFC107;
+}
+
+.filter-group--flavor {
+    background-color: rgba(33, 150, 243, 0.08);
+    border-left: 3px solid #1565c0;
+}
+
+body.dark-mode .filter-group {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .filter-group--availability {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+body.dark-mode .filter-group--favorite {
+    background-color: rgba(255, 193, 7, 0.1);
+}
+
+body.dark-mode .filter-group--flavor {
+    background-color: rgba(33, 150, 243, 0.1);
+}
+
+.filter-group .group-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.filter-group .filter-tags {
+    width: 100%;
+    margin-left: 0;
+}
+
+.filter-group--alcohol .filter-tags {
+    margin-top: 0;
+}
+
+.filter-group--alcohol.collapsed .filter-tags {
+    display: none;
 }
 
 .filter-group label {
+    margin-right: 8px;
     font-weight: bold;
-    font-size: 13px;
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+.filter-group--availability label {
+    color: var(--success-color);
+}
+
+.filter-group--favorite label {
+    color: #FFC107;
+}
+
+.filter-group--flavor label {
+    color: #1565c0;
+}
+
+body.dark-mode .filter-group--availability label,
+body.dark-mode .filter-group--favorite label,
+body.dark-mode .filter-group--flavor label {
+    color: #fff;
+    opacity: 0.9;
 }
 
 .filter-group select {
@@ -249,21 +333,53 @@ body.dark-mode .search__input {
     flex-basis: 100%;
 }
 
+.filter-group--availability,
+.filter-group--favorite {
+    margin-top: 0;
+}
+
+.filter-group--alcohol {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.filter-group--alcohol .toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-color);
+    padding: 0;
+    margin-left: auto;
+}
+
+body.dark-mode .filter-group--alcohol {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 .filter-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 8px;
+    margin-top: 0;
+    align-items: center;
 }
 
+/* Filter Tags */
 .filter-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
     background-color: var(--tag-bg);
     color: var(--tag-text);
-    padding: 4px 10px;
-    border-radius: 16px;
-    font-size: 0.85rem;
+    margin: 2px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 11px;
+    user-select: none;
 }
 
 .filter-tag:hover {
@@ -275,30 +391,64 @@ body.dark-mode .search__input {
     color: var(--tag-active-text);
 }
 
+/* Specific tag types */
 .filter-tag--flavor {
-    padding: 4px 8px;
-    border-radius: 16px;
-    background-color: var(--indicator-bg);
-    cursor: pointer;
-    font-size: 12px;
-    transition: background-color 0.2s;
-    user-select: none;
+    background-color: var(--flavor-tag-bg);
+    color: var(--flavor-tag-text);
 }
 
 .filter-tag--flavor.active {
-    background-color: var(--accent-color);
-    color: white;
+    background-color: #1565c0;
+    color: #fff;
 }
 
 .filter-tag--flavor:hover {
-    background-color: var(--accent-color);
-    opacity: 0.8;
-    color: white;
+    background-color: var(--tag-hover-bg);
 }
 
 .filter-tag--alcohol {
     background-color: var(--alcohol-tag-bg);
     color: var(--alcohol-tag-text);
+    margin: 3px;
+}
+
+.filter-tag--alcohol.active {
+    background-color: #9C27B0;
+    color: white;
+}
+
+.filter-tag--alcohol:hover {
+    background-color: var(--tag-hover-bg);
+}
+
+.filter-tag--availability,
+.filter-tag--favorite {
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+}
+
+.filter-tag--availability.active,
+.filter-tag--favorite.active {
+    background-color: var(--tag-active-bg);
+    color: var(--tag-active-text);
+}
+
+.filter-tag--availability:hover,
+.filter-tag--favorite:hover {
+    background-color: var(--tag-hover-bg);
+}
+
+.filter-tag--availability[data-value="available"].active {
+    background-color: var(--success-color);
+}
+
+.filter-tag--availability[data-value="unavailable"].active {
+    background-color: #f44336;
+}
+
+.filter-tag--favorite[data-value="favorite"].active {
+    background-color: #FFC107;
+    color: #333;
 }
 
 .card-tag-list {

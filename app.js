@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('themeToggle');
     const cocktailsGrid = document.getElementById('cocktailsGrid');
     const searchInput = document.getElementById('searchInput');
-    const availabilityFilter = document.getElementById('availabilityFilter');
-    const favoriteFilter = document.getElementById('favoriteFilter');
+    const availabilityTags = document.getElementById('availabilityTags');
+    const favoriteTags = document.getElementById('favoriteTags');
     const flavorTagsContainer = document.getElementById('flavorTags');
     const alcoholTagsContainer = document.getElementById('alcoholTags');
     const cocktailModal = document.getElementById('cocktailModal');
@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let allFlavorTags = [];
     let activeAlcoholTags = [];
     let allAlcoholTags = [];
+    let activeAvailabilityTag = 'all';
+    let activeFavoriteTag = 'all';
 
     // Theme Toggle
     themeToggle.addEventListener('click', function() {
@@ -65,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Filter cocktails based on search, availability, favorites, flavor tags, and alcohol tags
         const searchTerm = searchInput.value.toLowerCase();
-        const availabilityValue = availabilityFilter.value;
-        const favoriteValue = favoriteFilter.value;
         
         const filteredCocktails = cocktails.filter(cocktail => {
             // Search filter
@@ -74,14 +74,14 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Availability filter
             const matchesAvailability = 
-                availabilityValue === 'all' || 
-                (availabilityValue === 'available' && cocktail.available) || 
-                (availabilityValue === 'unavailable' && !cocktail.available);
+                activeAvailabilityTag === 'all' || 
+                (activeAvailabilityTag === 'available' && cocktail.available) || 
+                (activeAvailabilityTag === 'unavailable' && !cocktail.available);
             
             // Favorite filter
             const matchesFavorite = 
-                favoriteValue === 'all' || 
-                (favoriteValue === 'favorite' && cocktail.favorite);
+                activeFavoriteTag === 'all' || 
+                (activeFavoriteTag === 'favorite' && cocktail.favorite);
             
             // Flavor tags filter
             const matchesFlavorTags = 
@@ -310,6 +310,57 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Set up event listeners
+    function setupEventListeners() {
+        // Search input
+        searchInput.addEventListener('input', renderCocktails);
+        
+        // Availability tags
+        const availabilityTagElements = availabilityTags.querySelectorAll('.filter-tag--availability');
+        availabilityTagElements.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // Remove active class from all tags
+                availabilityTagElements.forEach(t => t.classList.remove('active'));
+                
+                // Add active class to clicked tag
+                this.classList.add('active');
+                
+                // Update active tag
+                activeAvailabilityTag = this.getAttribute('data-value');
+                
+                // Re-render cocktails
+                renderCocktails();
+            });
+        });
+        
+        // Favorite tags
+        const favoriteTagElements = favoriteTags.querySelectorAll('.filter-tag--favorite');
+        favoriteTagElements.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // Remove active class from all tags
+                favoriteTagElements.forEach(t => t.classList.remove('active'));
+                
+                // Add active class to clicked tag
+                this.classList.add('active');
+                
+                // Update active tag
+                activeFavoriteTag = this.getAttribute('data-value');
+                
+                // Re-render cocktails
+                renderCocktails();
+            });
+        });
+        
+        // Alcohol toggle
+        const toggleAlcohol = document.getElementById('toggleAlcohol');
+        const alcoholGroup = document.querySelector('.filter-group--alcohol');
+        
+        toggleAlcohol.addEventListener('click', function() {
+            alcoholGroup.classList.toggle('collapsed');
+            this.textContent = alcoholGroup.classList.contains('collapsed') ? '▶' : '▼';
+        });
+    }
+
     // Initialize the application
     function init() {
         console.log('Fetching cocktails data...');
@@ -331,6 +382,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 renderFlavorTags();
                 extractAlcoholTags();
                 renderAlcoholTags();
+                setupEventListeners();
             })
             .catch(error => {
                 console.error('Error fetching cocktails from API:', error);
@@ -353,17 +405,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         renderFlavorTags();
                         extractAlcoholTags();
                         renderAlcoholTags();
+                        setupEventListeners();
                     })
                     .catch(fallbackError => {
                         console.error('Error fetching cocktails from fallback:', fallbackError);
                         cocktailsGrid.innerHTML = '<div class="no-results">Error loading cocktails. Please try again later.</div>';
                     });
             });
-        
-        // Add event listeners for filters
-        searchInput.addEventListener('input', renderCocktails);
-        availabilityFilter.addEventListener('change', renderCocktails);
-        favoriteFilter.addEventListener('change', renderCocktails);
     }
 
     // Start the app
