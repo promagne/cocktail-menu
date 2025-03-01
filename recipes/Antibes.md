@@ -14,7 +14,7 @@ This cocktail is a bold fusion of bitter and tropical elements, balancing Negron
 - **2 oz** Gin
 - **1/2 oz** Benedictine
 - **2 oz** Grapefruit juice, fresh squeezed
-- **grapefruit Wedge**, For Garnish
+- **grapefruit Wedge** For Garnish
 
 ## Instructions:
 1. Fill a shaker with ice. 

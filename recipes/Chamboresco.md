@@ -1,16 +1,17 @@
 ---
 title: Chamboresco
-flavor: []
-favorite: false
+flavor: [sweet]
+favorite: true
 available: true
 alcohol: [Bourbon, Chambord]
 ---
-# Chambordesseco
+# Chamboresco
 
 ## Ingredients:
 - **2 oz** Bourbon
 - **3/4 oz** Chambord
 - **1/2 oz** Vanilla Syrup
+- **Prosecco** to top
 
 ## Instructions:
 1. Shake with ice
