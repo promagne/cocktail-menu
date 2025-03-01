@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     // DOM Elements
-    const themeToggle = document.getElementById('themeToggle');
     const cocktailsGrid = document.getElementById('cocktailsGrid');
     const searchInput = document.getElementById('searchInput');
     const availabilityTags = document.getElementById('availabilityTags');
@@ -19,35 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let allAlcoholTags = [];
     let activeAvailabilityTag = 'all';
     let activeFavoriteTag = 'all';
-
-    // Theme Toggle
-    themeToggle.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-        updateThemeButtonText();
-    });
-
-    // Set dark mode by default or check for saved preference
-    if (localStorage.getItem('darkMode') === null) {
-        // No preference saved, set dark mode by default
-        document.body.classList.add('dark-mode');
-        localStorage.setItem('darkMode', 'true');
-    } else if (localStorage.getItem('darkMode') === 'true') {
-        // User previously selected dark mode
-        document.body.classList.add('dark-mode');
-    }
-    
-    // Update theme button text based on current mode
-    function updateThemeButtonText() {
-        if (document.body.classList.contains('dark-mode')) {
-            themeToggle.textContent = 'Switch to Light Mode';
-        } else {
-            themeToggle.textContent = 'Switch to Dark Mode';
-        }
-    }
-    
-    // Initialize theme button text
-    updateThemeButtonText();
 
     // Close Modal
     closeModal.addEventListener('click', function() {
