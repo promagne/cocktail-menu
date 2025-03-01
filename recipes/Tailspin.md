@@ -15,7 +15,8 @@ alcohol: [Gin, Chartreuse]
 
 ## Instructions:
 1. Rinse a coupe with campari
-
+2. Add all the ingredients into a mixing glass with ice, and stir until well-chilled.
+3. Strain into a chilled coupe glass.
 
 
 
