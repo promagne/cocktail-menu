@@ -14,9 +14,5 @@ alcohol: [Gin, Chartreuse]
 - **¾ oz** Lime juice
 
 ## Instructions:
-1. Shake all the ingredients with ice, then strain into a coupe.
+1. Shake all the ingredients with ice, then strain into a coupe or a Nick & Nora glass.
 2. No garnish.
-
-
-
-

@@ -13,7 +13,8 @@ alcohol: [Scotch, Amaro, Prosecco]
 - **2 oz** Brut Sparkling Wine
 
 ## Instructions
-Place the whisky and Amaro in a mixing glass filled with ice, stir, and strain into a chilled champagne flute. Top with the sparkling wine.
+1. Place the whisky and Amaro in a mixing glass filled with ice, stir, and strain into a chilled champagne flute. 
+2. Top with the sparkling wine.
 
 
 

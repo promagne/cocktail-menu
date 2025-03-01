@@ -1,6 +1,6 @@
 ---
 title: La Dolce Vita
-flavor: []
+flavor: [sweet, strong]
 favorite: true
 available: true
 alcohol: [Rye, Campari, St-Germain]
@@ -13,7 +13,9 @@ alcohol: [Rye, Campari, St-Germain]
 - **½ oz** St-Germain
 
 ## Instructions:
-Stir all the ingredients over ice, then strain into a double rocks glass over 1 large ice cube. No garnish.
+1. Stir all the ingredients over ice
+2. Strain into a double rocks glass over 1 large ice cube. 
+3. No garnish.
 
 
 

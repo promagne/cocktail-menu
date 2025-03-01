@@ -18,8 +18,4 @@ alcohol: [Bourbon, Vermouth]
 2. Strain into chilled cocktail glass. 
 3. Garnish with lemon peel and brandied cherry.
 
-Peacock Alley
-
-
-
 

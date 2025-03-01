@@ -1,11 +1,13 @@
 ---
 title: Monteverde's apple Kickin
-flavor: []
+flavor: [strong, boozy, sweet]
 favorite: false
 available: true
 alcohol: [Scotch, Calvados, Amaro]
 ---
 # Monteverde's Apple Kickin
+
+The combination of Japanese whisky, Calvados and amaro creates flavor fireworks in this cocktail from Monteverde in Chicago.
 
 ## Ingredients:
 - **1½ oz** Japanese Whisky(Monteverde uses Suntory Toki)
@@ -19,6 +21,6 @@ alcohol: [Scotch, Calvados, Amaro]
 2. Strain into a double rocks glass over 1 large ice cube.
 3. Garnish.
 
+## Source
 
-
-
+Imbibe Magazine
