@@ -22,20 +22,27 @@
     --text-color: #FFFFFF;
     --text-secondary: #B0B0B0;
     --border-color: #333333;
+    
+    /* Tag colors */
     --tag-bg: #333333;
     --tag-text: #E0E0E0;
     --tag-active-bg: #1976D2;
     --tag-active-text: #FFFFFF;
+    
+    /* Flavor tag colors */
+    --flavor-tag-bg: rgba(21, 101, 192, 0.2);
+    --flavor-tag-text: #90CAF9;
+    
+    /* Alcohol tag colors */
+    --alcohol-tag-bg: rgba(156, 39, 176, 0.2);
+    --alcohol-tag-text: #CE93D8;
+    
     --modal-bg: #1E1E1E;
     --modal-overlay: rgba(0, 0, 0, 0.8);
     --scrollbar-thumb: #555555;
     --scrollbar-track: #333333;
     --indicator-bg: rgba(255, 255, 255, 0.1);
     --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --alcohol-tag-bg: #6b4f47;
-    --alcohol-tag-text: #ffffff;
-    --flavor-tag-bg: #333;
-    --flavor-tag-text: #ddd;
 }
 
 body {
@@ -358,6 +365,29 @@ div.filter-tag--flavor.active {
     color: #333;
 }
 
+.card-tag-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.card-tag-label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-right: 8px;
+    opacity: 0.9;
+    min-width: 50px;
+}
+
+/* Label colors to match filter groups */
+.card-tag-section:has(.card-tag--flavor) .card-tag-label {
+    color: #1565c0;
+}
+
+.card-tag-section:has(.card-tag--alcohol) .card-tag-label {
+    color: #9C27B0;
+}
+
 .card-tag-list {
     display: flex;
     flex-wrap: wrap;
@@ -377,7 +407,8 @@ div.filter-tag--flavor.active {
 }
 
 .card-tag--flavor {
-    /* Inherits base styles from .card-tag */
+    background-color: var(--flavor-tag-bg);
+    color: var(--flavor-tag-text);
 }
 
 .card-tag--alcohol {
