@@ -11,10 +11,10 @@ Named for the 1850s poem by Rudyard Kipling, St. John Frizzell appropriately cal
 
 ## Ingredients:
 - **3** Cardamom Pods
-- **¾ Ounce** Simple syrup
+- **¾ oz** Simple syrup
 - **quartered** Lime juice
-- **1 Ounce** Pineapple juice
-- **2 Ounces** London Dry Gin(preferably Old Raj 110)
+- **1 oz** Pineapple juice
+- **2 oz** London Dry Gin(preferably Old Raj 110)
 
 ## Garnish:
 Pineapple Fronds

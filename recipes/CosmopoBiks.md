@@ -1,8 +1,8 @@
 ---
 title: CosmopoBiks
-flavor: []
+flavor: [sweet, fruity]
 favorite: false
-available: true
+available: false
 alcohol: [Vodka]
 ---
 # CosmopoliBiks
@@ -13,11 +13,12 @@ alcohol: [Vodka]
 - **0.25 oz** Grenadine
 - **0.75 oz** Cointreau
 - **1.5 oz** Of Cranberry Juice
-- **0.5 oz** Lime(or less)
+- **0.5 oz** Lime (or less to taste)
 
 ## Instructions:
 1. Shake with ice
-2. In a coupe glass
+2. Strain into a coupe glass
+3. Garnish with a lemon twist
 
 
 

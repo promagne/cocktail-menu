@@ -1,23 +1,22 @@
 ---
 title: Cosmopolitain
-flavor: []
+flavor: [sweet, fruity]
 favorite: false
-available: true
+available: false
 alcohol: [Vodka, Cointreau]
 ---
 # Cosmopolitain
 
 ## Ingredients:
-- **2 oz** Vodka Grey Goose
-- **1 oz** Vodka Grapefruit
-- **2 oz** Cointreau
-- **1 oz** Lime Juice
-- **1.5 oz** Cranberry Juice
+- **1 oz** Vodka Grey Goose
+- **1/2 oz** Vodka Grapefruit
+- **1/2 oz** Cointreau
+- **1/2 oz** Lime Juice
+- **0.75 oz** Cranberry Juice
 
 ## Instructions:
-1. Pour un verre haut.
-2. Shake it in ice
-
-
+1. Shake with ice
+2. Strain into a coupe glass
+3. Garnish with a lemon twist
 
 

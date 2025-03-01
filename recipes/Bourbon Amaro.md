@@ -1,11 +1,14 @@
 ---
 title: Bourbon Amaro
-flavor: []
+flavor: [strong, boozy, citrusy]
 favorite: false
 available: true
 alcohol: [Bourbon, Amaro]
 ---
 # BourBamaro
+
+## Description
+This cocktail is a perfect blend of bitter and sweet, with the richness of bourbon complementing the herbal qualities of amaro and Campari.
 
 ## Ingredients:
 - **1.5 oz** Bourbon
@@ -13,7 +16,6 @@ alcohol: [Bourbon, Amaro]
 - **1/2 oz** Campari
 - **1/2 oz** Fresh Lemon Juice
 - **1/2 oz** Simple Syrup
-- Ice
 - Lemon Twist Or Cherry for garnish(optional)
 
 ## Instructions:
@@ -23,7 +25,6 @@ alcohol: [Bourbon, Amaro]
 4. Garnish with a lemon twist or cherry if desired.
 5. Serve immediately and enjoy!
 
-This cocktail is a perfect blend of bitter and sweet, with the richness of bourbon complementing the herbal qualities of amaro and Campari. Enjoy responsibly!
 
 
 

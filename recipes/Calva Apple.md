@@ -8,14 +8,14 @@ alcohol: [Calvados, Vermouth]
 # Calva Apple
   
 ## Ingredients:
-- 1.5oz Calva
-- 0.5oz Sweet vermouth
-- 0.5oz Symple syrup
+1. **1.5oz** Calva
+2. **0.5oz** Sweet vermouth
+3. **0.5oz** Symple syrup
 
 ## Instructions:
-- Torch in a flamming glass
-- Add little pieces of green apple
-- Serve and enjoy!
+1. Torch in a flamming glass
+2. Add little pieces of green apple
+3. Serve and enjoy!
 
 
 

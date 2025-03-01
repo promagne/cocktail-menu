@@ -1,6 +1,6 @@
 ---
 title: Boulevardier
-flavor: []
+flavor: [strong, boozy, bitter]
 favorite: false
 available: true
 alcohol: [Bourbon, Vermouth]
@@ -8,9 +8,9 @@ alcohol: [Bourbon, Vermouth]
 # Boulevardier
 
 ## Ingredients:
-- **1½ Ounces** Marker's Mark Bourbon
-- **3/4 Ounce** House Sweet Vermouth
-- **3/4 Ounce** Campari
+- **1½ oz** Marker's Mark Bourbon
+- **3/4 oz** House Sweet Vermouth
+- **3/4 oz** Campari
 
 ## Garnish: 
 1 Lemon Twist

@@ -8,10 +8,10 @@ alcohol: [Rye, Benedictine, Chartreuse]
 # Monte Casino
 
 ## Ingredients
-- **¾ ounce** American rye whiskey
-- **¾ ounce** Benedictine
-- **¾ ounce** Yellow Chartreuse
-- **¾ ounce** lemon juice, freshly squeezed
+- **¾ oz** American rye whiskey
+- **¾ oz** Benedictine
+- **¾ oz** Yellow Chartreuse
+- **¾ oz** lemon juice, freshly squeezed
 - **Garnish:** lemon twist
 
 ## Steps

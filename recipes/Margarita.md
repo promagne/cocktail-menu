@@ -9,10 +9,10 @@ alcohol: [Tequila, Cointreau]
 
 ## Ingredients:
 - Kosher Salt
-- **2 Ounces** Siembra Azul Blanco Tequila
-- **3/4 Ounce** Cointreau
-- **1 Ounce** Lime juice
-- **1/4 Ounce** Agave nectar
+- **2 oz** Siembra Azul Blanco Tequila
+- **3/4 oz** Cointreau
+- **1 oz** Lime juice
+- **1/4 oz** Agave nectar
 - Garnish: 1 lime wedge
 
 ## Instructions:

@@ -8,10 +8,10 @@ alcohol: [Gin, Chartreuse]
 # Last Word
 
 ## Ingredients:
-- **¾ Ounce** Beefeater London Dry Gin
-- **¾ Ounce** Green Chartreuse
-- **¾ Ounce** Luxardo Maraschino Liqueur
-- **¾ Ounce** Lime juice
+- **¾ oz** Beefeater London Dry Gin
+- **¾ oz** Green Chartreuse
+- **¾ oz** Luxardo Maraschino Liqueur
+- **¾ oz** Lime juice
 
 ## Instructions:
 1. Shake all the ingredients with ice, then strain into a coupe.

@@ -21,6 +21,11 @@ alcohol: [Gin, Campari, Vermouth]
 ### Strawberry-Infused Campari
 #### Ingredients:
 - **1 cup** Chopped Strawberries(fresh or frozen)
+- Mix with a bottle of campari in a mason jar. 
+- Keep macerate 48-72h. 
+- Bottle up. 
+- Works with raspberry too. 
+- 
 
 
 

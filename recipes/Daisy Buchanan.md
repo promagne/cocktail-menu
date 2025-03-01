@@ -1,6 +1,6 @@
 ---
 title: Daisy Buchanan
-flavor: []
+flavor: [herbal, strong, bitter]
 favorite: false
 available: true
 alcohol: [Rye, Dry Vermouth]
@@ -20,6 +20,9 @@ alcohol: [Rye, Dry Vermouth]
 4. Strain into a coupe glass.  
 5. Serve with no garnish.  
 
-
+For the Chamomile-Infused Old Rye:
+1. Add 3-4 bags of chaamomile tea to a bottle of rye
+2. Macerate for 48-72 hours
+3. Strain and bottle up.
 
 
