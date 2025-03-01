@@ -1,11 +1,11 @@
 ---
-title: Monteverde's apple kitchen
+title: Monteverde's apple Kickin
 flavor: []
 favorite: false
 available: true
 alcohol: [Scotch, Calvados, Amaro]
 ---
-# Monteverde's Apple Kickin' Cocktail
+# Monteverde's Apple Kickin
 
 ## Ingredients:
 - **1½ oz** Japanese Whisky(Monteverde uses Suntory Toki)
@@ -15,14 +15,9 @@ alcohol: [Scotch, Calvados, Amaro]
 - **1 Dash** Angostura bitters
 
 ## Instructions:
-Combine all of the ingredients in a rocks glass 
-
-
-Glass:
-- Rocks
-
-Garnish:
-- Apple slice
+1. Combine all of the ingredients in a rocks glass with large ice cube, then stir. 
+2. Strain into a double rocks glass over 1 large ice cube.
+3. Garnish.
 
 
 

@@ -15,7 +15,6 @@ alcohol: [Rum, Cointreau, Soho]
 - 1oz Orange Juice
 - 0.5oz Lime
 - 1oz Cointreau
-- Check In A Shaker
   
 ## Instructions:
 
