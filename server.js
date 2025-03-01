@@ -129,10 +129,10 @@ function generateCocktailData() {
             path: `recipes/${file}`,
             alcoholTypes,
             ingredients,
-            flavor: frontmatter.flavor || [],
+            flavor: Array.isArray(frontmatter.flavor) ? frontmatter.flavor : (frontmatter.flavor ? [frontmatter.flavor] : []),
             available: frontmatter.available !== undefined ? frontmatter.available : true,
             favorite: frontmatter.favorite || false,
-            alcohol: frontmatter.alcohol || []
+            alcohol: Array.isArray(frontmatter.alcohol) ? frontmatter.alcohol : (frontmatter.alcohol ? [frontmatter.alcohol] : [])
         });
     });
     

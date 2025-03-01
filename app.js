@@ -91,9 +91,9 @@ document.addEventListener('DOMContentLoaded', function() {
             statusIndicators += '<span class="status-indicator favorite">★</span>';
         }
         
-        // Add flavor tags if any
+        // Add flavor tags if present
         let flavorTags = '';
-        if (cocktail.flavor && cocktail.flavor.length > 0) {
+        if (cocktail.flavor && Array.isArray(cocktail.flavor) && cocktail.flavor.length > 0) {
             flavorTags = `
                 <div class="card-tag-list">
                     ${cocktail.flavor.map(flavor => `<span class="card-tag card-tag--flavor">${flavor}</span>`).join('')}
@@ -102,8 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Limit to 4 ingredients
-        const displayIngredients = cocktail.ingredients.slice(0, 4);
-        const hasMoreIngredients = cocktail.ingredients.length > 4;
+        const ingredients = Array.isArray(cocktail.ingredients) ? cocktail.ingredients : [];
+        const displayIngredients = ingredients.slice(0, 4);
+        const hasMoreIngredients = ingredients.length > 4;
         
         card.innerHTML = `
             <div class="card-header">
@@ -149,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Add flavor tags if any
                 let flavorTags = '';
-                if (cocktail.flavor && cocktail.flavor.length > 0) {
+                if (cocktail.flavor && Array.isArray(cocktail.flavor) && cocktail.flavor.length > 0) {
                     flavorTags = `
                         <div class="detail-tags">
                             ${cocktail.flavor.map(flavor => `<span class="detail-tag detail-tag--flavor">${flavor}</span>`).join('')}
@@ -159,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Add alcohol tags if any
                 let alcoholTags = '';
-                if (cocktail.alcohol && cocktail.alcohol.length > 0) {
+                if (cocktail.alcohol && Array.isArray(cocktail.alcohol) && cocktail.alcohol.length > 0) {
                     alcoholTags = `
                         <div class="detail-tags">
                             ${cocktail.alcohol.map(alcohol => `<span class="detail-tag detail-tag--alcohol">${alcohol}</span>`).join('')}
