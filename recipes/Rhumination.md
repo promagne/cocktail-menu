@@ -1,6 +1,6 @@
 ---
 title: Rhumination
-flavor: []
+flavor: [tropical, fruity, strong]
 favorite: false
 available: true
 alcohol: [Bourbon, Rum, St-Germain]
@@ -15,8 +15,9 @@ alcohol: [Bourbon, Rum, St-Germain]
 - **1.5 oz** Pineapple
 
 ## Instructions:
-1. Shake
-
+1. Shake with ice
+2. Pour in a tiki glass
+3. Garnish with a pineapple slice
 
 
 

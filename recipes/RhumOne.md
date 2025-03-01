@@ -1,6 +1,6 @@
 ---
 title: RhumOne
-flavor: []
+flavor: [tropical, fruity, sweet]
 favorite: false
 available: true
 alcohol: [Rum, Malibu]
@@ -18,7 +18,7 @@ alcohol: [Rum, Malibu]
 
 ## Instructions:
 1. Shake 3 ice cube
-2. In a glass with crushed ice
+2. In a tiki glass with crushed ice
 
 
 

@@ -8,9 +8,9 @@ alcohol: [Scotch, Vermouth]
 # Vallombrosa
 
 ## Ingredients:
-- **1.5 oz** Good Blended Scotch, such as Dewar's 12
+- **1.5 oz** Blended Scotch
 - **1 oz** Italian Bianco-style vermouth
-- **0.5 oz** Strega Or Yellow Chartreuse
+- **0.5 oz** Yellow Chartreuse
 - **2 Dashes** Peychaud's bitters
 - **Garnish:** Orange peel
 

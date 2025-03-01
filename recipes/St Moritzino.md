@@ -1,6 +1,6 @@
 ---
 title: St Moritzino
-flavor: []
+flavor: [fruity, sweet, citrusy]
 favorite: false
 available: true
 alcohol: [Vodka, Cointreau]
@@ -14,6 +14,9 @@ alcohol: [Vodka, Cointreau]
 - **1 oz** Lemon Juice
 
 ## Instructions:
+1. Shake with ice
+2. Straing and pour in a coupe
+4. Garnish with lemon twist.
 
 
 

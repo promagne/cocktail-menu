@@ -1,6 +1,6 @@
 ---
 title: St John Frizzell
-flavor: []
+flavor: [herbal,spicy, sweet]
 favorite: false
 available: true
 alcohol: [Gin]
@@ -16,11 +16,13 @@ Named for the 1850s poem by Rudyard Kipling, St. John Frizzell appropriately cal
 - **1 oz** Pineapple juice
 - **2 oz** London Dry Gin(preferably Old Raj 110)
 
-## Garnish:
-Pineapple Fronds
-
 ## Instructions:
-Combine the cardamom pods and simple syrup in a cocktail shaker and muddle fragment. Add the gin, pineapple fronds, juice, and lime juice. Add ice and shake until chilled, about 10 seconds. Fine strain ("fire-mesh strainer," page 51) into a tiki mug filled with ice. Top with tonic water and stir gently to combine. Garnish with pineapple fronds.
+1. Combine the cardamom pods and simple syrup in a cocktail shaker and muddle fragment. 
+2. Add the gin, pineapple fronds, juice, and lime juice. 
+3. Add ice and shake until chilled, about 10 seconds. 
+4. Fine strain into a tiki mug filled with ice. 
+5. Top with tonic water and stir gently to combine. 
+6. Garnish with pineapple fronds.
 
 
 

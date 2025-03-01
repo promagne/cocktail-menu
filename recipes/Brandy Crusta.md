@@ -24,7 +24,3 @@ alcohol: [Cognac, Cointreau]
 
 ## History:
 Originating in New Orleans in the 1850s from creative Italian barman Joseph Santini, and debuting in print courtesy of Jerry Thomas a short time later, the Brandy Crusta...
-
-
-
-

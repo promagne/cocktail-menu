@@ -9,11 +9,11 @@ alcohol: [Bourbon]
 
 ## Ingredients:
 - **2** Strawberries, hulled
-- **½ oz** (15 ml)1:1 Simple Syrup(see headnote)
-- **2 oz** (60 ml)Bourbon
-- **¾ oz** (22 ml)Fresh Lemon Juice
+- **½ oz** 1:1 Simple Syrup
+- **2 oz** Bourbon
+- **¾ oz** Fresh Lemon Juice
 - **2 Dashes** Angostura bitters
-- **3 oz** (90 ml)Ginger Beer
+- **3 oz** Ginger Beer
 - **strawberry**, To Garnish
 
 ## Instructions:
@@ -21,7 +21,6 @@ Gently muddle the strawberries with the Simple Syrup in a cocktail shaker. Add t
 
 ## Notes:
 Makes 1 drink
-
 When refrigerated, the syrup keeps for 1 to 2 weeks.
 
 
