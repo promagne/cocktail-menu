@@ -1,6 +1,6 @@
 ---
 title: Madame Rouge
-flavor: []
+flavor: [strong, bitter]
 favorite: false
 available: true
 alcohol: [Scotch, Amaro, Prosecco]

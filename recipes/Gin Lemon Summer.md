@@ -1,11 +1,11 @@
 ---
 title: Gin Lemon Summer
-flavor: []
+flavor: [citrusy]
 favorite: false
 available: true
 alcohol: [Gin, Cointreau]
 ---
-# New Summer Drink
+# Gin Lemon Summer
 
 ## Ingredients:
 - **2 oz** Gin
@@ -15,9 +15,11 @@ alcohol: [Gin, Cointreau]
 - **1 Dash** Bitter orange
 
 ## Instructions:
-1. Shake super frosty
+1. Add all ingredients to a cocktail shaker with ice
+2. Shake well
+3. Strain into a fresh cocktail glass
 
-Delicious. New summer drink
+
 
 
 

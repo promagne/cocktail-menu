@@ -1,7 +1,7 @@
 ---
 title: Rhumination
 flavor: [tropical, fruity, strong]
-favorite: false
+favorite: true
 available: true
 alcohol: [Bourbon, Rum, St-Germain]
 ---

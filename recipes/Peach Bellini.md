@@ -1,6 +1,6 @@
 ---
 title: Peach Bellini
-flavor: []
+flavor: [sweet, fruity]
 favorite: false
 available: false
 alcohol: [Cointreau, Prosecco]
@@ -10,10 +10,12 @@ alcohol: [Cointreau, Prosecco]
 ## Ingredients:
 - **1 oz** Cointreau
 - **3 oz** Jus De Peche
-- **4** Ice Cube
+- Prosecco, To Top
 
 ## Instructions:
-1. Top with prosecco
+1. Shake all ingredients with ice.
+2. Strain into a coupe glass.
+3. Top with prosecco
 
 
 

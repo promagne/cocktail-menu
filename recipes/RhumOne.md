@@ -1,8 +1,8 @@
 ---
 title: RhumOne
 flavor: [tropical, fruity, sweet]
-favorite: false
-available: true
+favorite: true
+available: false
 alcohol: [Rum, Malibu]
 ---
 # Tropical Rum Cocktail
@@ -17,8 +17,8 @@ alcohol: [Rum, Malibu]
 - **2 Dash** Angostura
 
 ## Instructions:
-1. Shake 3 ice cube
-2. In a tiki glass with crushed ice
+1. Shake all ingredients with ice.
+2. Poor in a tiki glass with crushed ice
 
 
 

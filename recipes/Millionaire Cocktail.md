@@ -1,6 +1,6 @@
 ---
 title: Millionaire Cocktail
-flavor: []
+flavor: [sweet, strong, fruity]
 favorite: false
 available: true
 alcohol: [Rum, Gin]
@@ -17,18 +17,13 @@ Several cocktails bearing the Millionaire moniker have been in circulation since
 - **3/4 oz** Apricot Liqueur
 - **3/4 oz** Sloe Gin
 
-## Tools:
-- SHAKER, STRAINER
-
-## Glass:
-- COCKTAIL
-
 ## Garnish:
  Lime Wheel
 
 ## Instructions:
-Shake all of the ingredients with ice, then strain into a chilled glass and garnish.
-
+1. Shake all of the ingredients with ice
+2. Strain into a chilled glass and garnish with a lime wheel.
+3. Serve and enjoy!
 
 
 

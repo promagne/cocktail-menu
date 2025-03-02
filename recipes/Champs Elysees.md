@@ -1,6 +1,6 @@
 ---
 title: Champs Elysees
-flavor: []
+flavor: [strong]
 favorite: false
 available: true
 alcohol: [Cognac, Chartreuse]
@@ -15,7 +15,8 @@ alcohol: [Cognac, Chartreuse]
 - **1 Dash** Angostura Bitters
 
 ## Instructions:
-Shake all the ingredients with ice, then strain into a coupe. Garnish with the lemon twist.
+1. Shake all the ingredients with ice, then strain into a coupe. 
+2. Garnish with the lemon twist.
 
 
 

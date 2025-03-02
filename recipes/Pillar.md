@@ -1,7 +1,7 @@
 ---
 title: Pillar
-flavor: []
-favorite: false
+flavor: [strong, boosy]
+favorite: true
 available: true
 alcohol: [Gin, Vermouth, Calvados, Chartreuse]
 ---

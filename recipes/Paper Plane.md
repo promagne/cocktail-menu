@@ -1,13 +1,11 @@
 ---
 title: Paper Plane
-flavor: []
+flavor: [strong, citrusy]
 favorite: false
 available: true
 alcohol: [Bourbon, Aperol, Amaro]
 ---
 # Paper Plane
-
-**Keyword:** amaro, aperol, bourbon
 
 ## Ingredients:
 - **0.75 oz** Bourbon

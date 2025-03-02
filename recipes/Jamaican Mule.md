@@ -1,6 +1,6 @@
 ---
 title: Jamaican Mule
-flavor: []
+flavor: [strong, spicy, sweet]
 favorite: false
 available: true
 alcohol: [Rum]

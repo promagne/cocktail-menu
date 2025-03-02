@@ -14,7 +14,7 @@ alcohol: [Gin, St-Germain, Prosecco]
 - Prosecco
 
 ## Instructions:
-1. Shake with ice.
+1. Shake with gin, st-germain, and lemon juice with ice
 2. Pour in a frozen coupe.
 3. Top it off with Prosecco.
 

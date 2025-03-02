@@ -1,6 +1,6 @@
 ---
 title: Strawberry Bourbon
-flavor: []
+flavor: [sweet, fruity]
 favorite: false
 available: true
 alcohol: [Bourbon]
@@ -17,11 +17,12 @@ alcohol: [Bourbon]
 - **strawberry**, To Garnish
 
 ## Instructions:
-Gently muddle the strawberries with the Simple Syrup in a cocktail shaker. Add the bourbon, lemon juice, and Angostura bitters, then fill with ice and shake vigorously for 10–15 seconds. Double strain into a highball glass filled with fresh ice and top with the ginger beer. Garnish with a fresh strawberry.
+1. Gently muddle the strawberries with the Simple Syrup in a cocktail shaker. 
+2. Add the bourbon, lemon juice, and Angostura bitters, then fill with ice and shake vigorously for 10–15 seconds. 
+3. Double strain into a highball glass filled with fresh ice 
+4. Top with the ginger beer. 
+5. Garnish with a fresh strawberry.
 
-## Notes:
-Makes 1 drink
-When refrigerated, the syrup keeps for 1 to 2 weeks.
 
 
 

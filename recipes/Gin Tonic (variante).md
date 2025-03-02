@@ -1,6 +1,6 @@
 ---
 title: Gin Tonic (variante)
-flavor: []
+flavor: [herbal, bitter]
 favorite: false
 available: true
 alcohol: [Gin, Vodka]
@@ -12,6 +12,9 @@ alcohol: [Gin, Vodka]
 - **200 ml** Tonic Water
 
 ## Instructions:
+1. Add all ingredients to a mixing glass with ice
+2. Stir well
+3. Strain into a fresh cocktail glass   
 
 
 

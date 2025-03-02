@@ -1,6 +1,6 @@
 ---
 title: Monte Casino
-flavor: []
+flavor: [boozy, strong, herbal]
 favorite: false
 available: true
 alcohol: [Rye, Benedictine, Chartreuse]

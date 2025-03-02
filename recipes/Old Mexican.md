@@ -1,6 +1,6 @@
 ---
 title: Old Mexican
-flavor: []
+flavor: [sweet]
 favorite: false
 available: true
 alcohol: [Tequila]
@@ -16,7 +16,9 @@ alcohol: [Tequila]
 - Dry Sparkling Wine, to top (roughly 1 oz.)
 
 ## Instructions:
-1. Shake all the ingredients with ice, then fine strain into a rocks glass over a large ice cube. Garnish.
+1. Shake tequila, lime juice, mint leaves, chocolate bitters, and turbinado syrup with ice, 
+2. Fine strain into a rocks glass over a large ice cube. 
+3. Top with dry sparkling wine (roughly 1 oz).
 
 Glass: Old Fashioned
 Garnish: small dried rose bud

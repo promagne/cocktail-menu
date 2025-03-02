@@ -1,6 +1,6 @@
 ---
 title: Cinnamon-Rimmed Sidecar
-flavor: []
+flavor: [spicy, strong]
 favorite: false
 available: true
 alcohol: [Calvados, Cointreau]

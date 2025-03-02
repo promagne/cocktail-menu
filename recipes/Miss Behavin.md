@@ -1,6 +1,6 @@
 ---
 title: Miss Behavin
-flavor: []
+flavor: [strong, citrusy]
 favorite: false
 available: false
 alcohol: [Brandy, Eau De Vie, Prosecco]

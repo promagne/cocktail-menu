@@ -1,6 +1,6 @@
 ---
 title: Litchee Martini
-flavor: []
+flavor: [sweet, strong, fruity]
 favorite: false
 available: true
 alcohol: [Gin, Dry Vermouth]
@@ -13,9 +13,10 @@ alcohol: [Gin, Dry Vermouth]
 - **3/4 oz** Dry Vermouth
 
 ## Instructions:
-1. Stir lot of ice
-2. Add litchee to garnish
-
+1. Add all ingredients to a mixing glass with ice
+2. Stir well
+3. Strain into a Martini glass.
+4. Garnish with a litchee.
 
 
 

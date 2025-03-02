@@ -1,7 +1,7 @@
 ---
 title: RaedLover
 flavor: [fruity, sweet]
-favorite: false
+favorite: true
 available: true
 alcohol: [Rum, Cointreau, Soho]
 ---
