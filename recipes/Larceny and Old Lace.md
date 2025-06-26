@@ -1,6 +1,6 @@
 ---
 title: Larceny and Old Lace
-flavor: []
+flavor: [strong, boozy, bitter]
 favorite: false
 available: true
 alcohol: [Bourbon, Vermouth]

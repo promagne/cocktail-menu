@@ -1,6 +1,6 @@
 ---
 title: French 75
-flavor: []
+flavor: [sweet, fruity]
 favorite: false
 available: true
 alcohol: [Gin, St-Germain, Prosecco]

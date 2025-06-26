@@ -1,6 +1,6 @@
 ---
 title: Fake Love
-flavor: []
+flavor: [strong, sweet]
 favorite: false
 available: true
 alcohol: [Cognac]
