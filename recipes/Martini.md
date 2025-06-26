@@ -8,9 +8,9 @@ alcohol: [Gin, Dry Vermouth]
 # Perfect Solution Martini
 
 ## Ingredients:
-- **2.5 oz** Gin
+- **2.25 oz** Gin
 - **3/4 oz** Dry Vermouth
-- Olive Oil
+- Olive Brine
 
 ## Instructions:
 1. Stir well 30seconds.
