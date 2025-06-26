@@ -1,6 +1,6 @@
 ---
 title: Monica (variante)
-flavor: [sweet]
+flavor: [sweet, citrusy]
 favorite: true
 available: true
 alcohol: [Rum, St-Germain, Prosecco]
