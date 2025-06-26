@@ -22,7 +22,3 @@ A mash-up of a Piña Colada and a Negroni, the Amaro di Cocco marries Campari an
 1. Combine all the ingredients in a cocktail shaker. 
 2. Add 1 cup crushed ice and shake for about 5 seconds. 
 3. Pour into a tiki mug.
-
-
-
-

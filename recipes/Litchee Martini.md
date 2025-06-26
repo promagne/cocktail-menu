@@ -17,6 +17,3 @@ alcohol: [Gin, Dry Vermouth]
 2. Stir well
 3. Strain into a Martini glass.
 4. Garnish with a litchee.
-
-
-

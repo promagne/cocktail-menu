@@ -18,8 +18,3 @@ alcohol: [Bourbon, Vermouth]
 ## Instructions:
 1. Stir all the ingredients over ice, then strain into a coupe. 
 2. Garnish with the lemon twist.
-
-
-
-
-

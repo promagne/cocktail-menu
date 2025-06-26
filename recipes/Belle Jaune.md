@@ -7,7 +7,7 @@ alcohol: [Gin]
 ---
 # Belle Jaune
 
-This cocktail is light, bright, and herbaceous, making it perfect for a refreshing, garden-inspired drink.\
+This cocktail is light, bright, and herbaceous, making it perfect for a refreshing, garden-inspired drink.
 
 ## Ingredients:
 - **2 oz** Gin(preferably London Dry style)
@@ -33,7 +33,3 @@ This cocktail is light, bright, and herbaceous, making it perfect for a refreshi
 3. Fill with ice and shake vigorously for about 15 seconds.
 4. Double strain into a chilled coupe or martini glass.
 5. Garnish with a fresh thyme sprig and/or cucumber slice.
-
-
-
-

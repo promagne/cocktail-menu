@@ -15,7 +15,3 @@ alcohol: [Scotch, Amaro, Prosecco]
 ## Instructions
 1. Place the whisky and Amaro in a mixing glass filled with ice, stir, and strain into a chilled champagne flute. 
 2. Top with the sparkling wine.
-
-
-
-

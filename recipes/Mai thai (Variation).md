@@ -19,9 +19,4 @@ alcohol: [Rum, Cointreau]
 1. Fill a shaker with ice.  
 2. Add all the ingredients.  
 3. Shake well until chilled.  
-4. Strain into a glass filled with ice.  
-5.
-
-
-
-
+4. Strain into a glass filled with ice. 

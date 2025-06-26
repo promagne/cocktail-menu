@@ -5,7 +5,7 @@ favorite: false
 available: true
 alcohol: [Bourbon, Amaro]
 ---
-# BourBamaro
+# Bourbon Amaro
 
 ## Description
 This cocktail is a perfect blend of bitter and sweet, with the richness of bourbon complementing the herbal qualities of amaro and Campari.
@@ -24,8 +24,3 @@ This cocktail is a perfect blend of bitter and sweet, with the richness of bourb
 3. Strain the mixture into a chilled glass (rocks glass or coupe glass works well).
 4. Garnish with a lemon twist or cherry if desired.
 5. Serve immediately and enjoy!
-
-
-
-
-

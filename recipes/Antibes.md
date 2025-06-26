@@ -21,6 +21,3 @@ This cocktail is a bold fusion of bitter and tropical elements, balancing Negron
 2. Add gin, Benedictine, and grapefruit juice. 
 3. Shake vigorously, then strain into a rocks glass with ice cubes (or one nice big ice cube). 
 4. Garnish with wedge.
-
-
-
