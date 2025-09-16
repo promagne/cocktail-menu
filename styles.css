@@ -725,6 +725,45 @@ div.filter-tag--flavor.active {
     }
 }
 
+/* Performance optimizations */
+.virtual-scroll-container {
+    position: relative;
+    width: 100%;
+    contain: layout style paint;
+}
+
+.cocktail-card {
+    contain: layout style paint;
+    will-change: transform;
+}
+
+.cocktails-grid {
+    scroll-behavior: smooth;
+}
+
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, var(--card-bg) 25%, var(--border-color) 50%, var(--card-bg) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.error-message {
+    text-align: center;
+    color: var(--error-color);
+    padding: 20px;
+    font-size: 16px;
+}
+
 /* Print styles */
 @media print {
     body {
